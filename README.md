@@ -6,14 +6,17 @@ Research publications from Hermes Labs on **epistemic engineering**, the study a
 
 ## Why this exists
 
-Hermes Labs is named for Hermes, the Greek messenger god — patron of communication and interpretation, the herald who carries meaning between worlds. The thread to the work: **hermeneutics**, the theory of interpretation that takes its name from Hermes, is the philosophical anchor for an AI infrastructure company whose substrate is linguistic.
+Hermes Labs is a reliability research lab for autonomous AI agents. Two old questions from philosophy sit underneath the work:
 
-The thesis: **language sets capability.** The neural model is the ceiling, not the source. Reliability, interpretation, and epistemic discipline are properties of the linguistic infrastructure that wraps the model — the prompts, scaffolds, evals, memory layers, and audit surfaces. Hermes Labs publications study and engineer that substrate.
+- **Epistemology** is the study of how we know what is true. For an autonomous agent, the question becomes operational: when the model produces a claim, does it track reality, and how confidently? Hallucination, miscalibrated hedging, source-status credibility bias, and null-result asymmetry are all *epistemic* failures — failures of the agent to know what it knows.
 
-Two framings are repeated across this work:
+- **Hermeneutics** is the study of how meaning is interpreted and communicated. For an autonomous agent, the question becomes: when an instruction, a context window, or a tool description is read by the model, what does the model take that to mean — and does that meaning survive across turns, tools, and hand-offs? Silent instruction relaxation, multi-turn drift, and constraint evasion are all *hermeneutic* failures — failures of meaning to be preserved.
 
-- **Epistemic Engineering** — the foundational thesis. Language dictates capability and intelligence; the model is the ceiling, the linguistic substrate is the source of behavior. Reliability is an engineering problem of linguistic infrastructure, not weight tuning.
-- **Hermeneutic Engineering** — the operational corollary. Where Epistemic Engineering names the *what* (language as substrate of reasoning), Hermeneutic Engineering names the *how* (designing interpretive scaffolds, evidence-first evaluation, structured drift recovery, and audit trails so meaning is preserved across an autonomous-agent pipeline).
+Both questions are language questions.
+
+The Hermes Labs position is that **the model is the substrate** — the trained system, the parameters, the capability ceiling — and **language is the operations layer**: the prompts, scaffolds, evals, contexts, memory layers, and audit surfaces that run on top of the substrate. The substrate can be changed (fine-tuning, distillation, RLHF), but for most teams, most of the time, it's fixed; the operations layer is the lever. That's where deployed reliability is won or lost, and the operations layer is made of language.
+
+We call this discipline **Epistemic Engineering**: engineering an autonomous agent's epistemic and hermeneutic behavior — its calibration, its evidence handling, its preservation of meaning — at the language operations layer. Hermes Labs publications focus on **applied epistemology and hermeneutics** in this sense: empirical studies of how agents fail epistemically and hermeneutically, and the linguistic infrastructure that closes those failures.
 
 ---
 

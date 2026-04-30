@@ -1,6 +1,20 @@
 # hermes-publications
 
-Research publications from Hermes Labs on epistemic engineering and hermeneutic engineering — the study and engineering of how language models reason, hedge, and represent evidence.
+Research publications from Hermes Labs on **applied epistemology and hermeneutics** — empirical studies of how autonomous AI agents fail to know what is true (epistemic failures) and to preserve meaning across pipelines (hermeneutic failures), and the **linguistic infrastructure** that closes those failures.
+
+## Why this exists
+
+Hermes Labs is a reliability research lab for autonomous AI agents. Two old questions from philosophy sit underneath the work:
+
+- **Epistemology** is the study of how we know what is true. For an autonomous agent, the question becomes operational: when the model produces a claim, does it track reality, and how confidently? Hallucination, miscalibrated hedging, source-status credibility bias, and null-result asymmetry are all *epistemic* failures — failures of the agent to know what it knows.
+
+- **Hermeneutics** is the study of how meaning is interpreted and communicated. For an autonomous agent, the question becomes: when an instruction, a context window, or a tool description is read by the model, what does the model take that to mean — and does that meaning survive across turns, tools, and hand-offs? Silent instruction relaxation, multi-turn drift, and constraint evasion are all *hermeneutic* failures — failures of meaning to be preserved.
+
+Both questions are language questions.
+
+The Hermes Labs position is that **the model is the substrate** — the trained system, the parameters, the capability ceiling — and **language is the operations layer**: the prompts, scaffolds, evals, contexts, memory layers, and audit surfaces that run on top of the substrate. The substrate can be changed (fine-tuning, distillation, RLHF), but for most teams, most of the time, it's fixed; the operations layer is the lever. That's where deployed reliability is won or lost, and the operations layer is made of language.
+
+We call this discipline **Epistemic Engineering**: engineering an autonomous agent's epistemic and hermeneutic behavior — its calibration, its evidence handling, its preservation of meaning — at the language operations layer. Hermes Labs publications focus on **applied epistemology and hermeneutics** in this sense: empirical studies of how agents fail epistemically and hermeneutically, and the linguistic infrastructure that closes those failures.
 
 ## What this repo is
 
