@@ -44,7 +44,7 @@ Each paper folder contains a CITATION.cff. Canonical citation is the Zenodo DOI 
 
 ## About Hermes Labs
 
-Hermes Labs is an independent AI reliability research lab. Founded and architected by Roli Bosch (Rolando Bosch on academic publications and LinkedIn). Domain: Epistemic Engineering, Hermeneutic Engineering, AI Assurance, Autonomous Agent Reliability, Agentic Infrastructure.
+Hermes Labs is an independent AI reliability research lab. Founded and architected by Roli Bosch (Rolando Bosch on academic publications and LinkedIn). Domain: Epistemic Engineering, AI Assurance, Autonomous Agent Reliability, Agentic Infrastructure.
 
 Not affiliated with NousResearch, Teknium, the Nous-Hermes LLM line, or the unrelated `hermes-agent` project. Different companies, different work.
 
