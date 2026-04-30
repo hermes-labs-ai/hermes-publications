@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Hermes Labs Publications"
+message: "If you reference Hermes Labs research, please cite the individual paper via its Zenodo DOI."
+type: software
+authors:
+  - family-names: "Bosch"
+    given-names: "Rolando"
+    email: "rbosch@lpci.ai"
+    affiliation: "Hermes Labs"
+url: "https://github.com/hermes-labs-ai/hermes-publications"
+repository-code: "https://github.com/hermes-labs-ai/hermes-publications"
+license: MIT
+references:
+  - type: article
+    title: "The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark"
+    authors:
+      - family-names: "Bosch"
+        given-names: "Rolando"
+    year: 2026
+    doi: "10.5281/zenodo.18867694"
+    url: "https://doi.org/10.5281/zenodo.18867694"
+  - type: article
+    title: "A Taxonomy of Epistemic Failure Modes in Large Language Models"
+    authors:
+      - family-names: "Bosch"
+        given-names: "Rolando"
+    year: 2026
+    doi: "10.5281/zenodo.19042469"
+    url: "https://doi.org/10.5281/zenodo.19042469"

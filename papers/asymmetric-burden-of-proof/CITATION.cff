@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark"
+message: "If you reference this work, please cite the Zenodo DOI."
+type: article
+authors:
+  - family-names: "Bosch"
+    given-names: "Rolando"
+    email: "rbosch@lpci.ai"
+    affiliation: "Hermes Labs"
+year: 2026
+doi: "10.5281/zenodo.18867694"
+url: "https://doi.org/10.5281/zenodo.18867694"
+license: CC-BY-4.0
+keywords:
+  - "large language models"
+  - "LLM evaluation"
+  - "null-result bias"
+  - "epistemic failure"
+  - "AI safety"
+  - "evidence synthesis"
+  - "calibration"
+  - "matched-vignette benchmark"

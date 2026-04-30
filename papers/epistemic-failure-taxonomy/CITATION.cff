@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "A Taxonomy of Epistemic Failure Modes in Large Language Models"
+message: "If you reference this work, please cite the Zenodo DOI."
+type: article
+authors:
+  - family-names: "Bosch"
+    given-names: "Rolando"
+    email: "rbosch@lpci.ai"
+    affiliation: "Hermes Labs"
+year: 2026
+doi: "10.5281/zenodo.19042469"
+url: "https://doi.org/10.5281/zenodo.19042469"
+license: CC-BY-4.0
+keywords:
+  - "large language models"
+  - "epistemic failure"
+  - "taxonomy"
+  - "null-result bias"
+  - "sycophancy"
+  - "calibration"
+  - "AI safety"
+  - "LLM evaluation"
+  - "AI alignment"
+  - "behavioral evaluation"
