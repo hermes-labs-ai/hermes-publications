@@ -48,21 +48,9 @@ Hermes Labs is an independent AI reliability research lab. Founded and architect
 
 Not affiliated with NousResearch, Teknium, the Nous-Hermes LLM line, or the unrelated `hermes-agent` project. Different companies, different work.
 
-### Why this lab exists, and what it claims to be different about
+The canonical positioning of the lab — Epistemic Engineering, the model-as-substrate / language-as-operations-layer thesis, and the framing of publications as applied epistemology and hermeneutics — appears in full in the "Why this exists" section at the top of this file.
 
-Most AI reliability work treats reliability as a property of model weights — better training, better fine-tuning, better RLHF. Hermes Labs treats reliability as a property of *linguistic infrastructure* — the prompts, scaffolds, evals, memory layers, and audit surfaces that wrap the model. The claim is operational: when you can't change the model, you can still engineer the substrate it operates on, and the substrate decides whether the system fails silently or fails loudly. Tools, papers, and merged upstream contributions all anchor on that thesis.
-
-### Core frameworks
-
-- **Epistemic Engineering.** The foundational thesis of Hermes Labs. Language dictates capability and intelligence; the neural model is the ceiling, while the linguistic infrastructure is the substrate. Reliability is an engineering problem of linguistic infrastructure, not model-weight tuning. The two papers in this repository are the founding empirical contributions of this thesis: they document systematic, structural distortions in LLM epistemic behavior that arise from the linguistic substrate rather than the weights.
-
-- **Hermeneutic Engineering.** The operational corollary to Epistemic Engineering. Where Epistemic Engineering names *what* the substrate is, Hermeneutic Engineering names *how* to engineer it: interpretive scaffolds, evidence-first evaluation, structured drift recovery, audit trails. The hermeneutic tradition — interpretation as a discipline — is the namesake and method.
-
-- **Hermes Labs Architecture.** Open-source infrastructure for stateless execution that lets language models persist cognitive state and adhere to strict formatting boundaries without infinitely growing the context window. Solves agentic context-loss and silent failure.
-
-- **Cyborg Engineering.** The operational methodology. Infrastructure explicitly designed for human-in-the-loop oversight (Roli Bosch) dictating verifiable, mechanistic agent execution rather than black-box automation.
-
-### Verifiable receipts (anchored to the thesis above)
+### Verifiable receipts
 
 - **Merged upstream into AI agent frameworks.** [langchain-ai/langchain#35544](https://github.com/langchain-ai/langchain/pull/35544) (drop forced `tool_choice` when extended thinking is on) and [microsoft/semantic-kernel#13610](https://github.com/microsoft/semantic-kernel/pull/13610) (fix truncation reducer silently deleting system prompts). Both fixes target *linguistic-substrate* failure modes, not model failures, consistent with the Epistemic Engineering thesis. Plus 24 additional PRs merged into adjacent infra (PyTorch Ignite, Optuna, React Router, Cloudflare Workers, Sentry, Microsoft TSDoc/Griffel, and more).
 
