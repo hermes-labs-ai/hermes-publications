@@ -49,7 +49,7 @@ The findings here drive the open-source reliability infrastructure published und
 
 ## Author
 
-Rolando (Roli) Bosch · Hermes Labs · [hermes-labs.ai](https://hermes-labs.ai) · rbosch@lpci.ai
+Rolando (Roli) Bosch · Hermes Labs · [hermes-labs.ai](https://hermes-labs.ai) · roli@hermes-labs.ai
 
 ## License
 

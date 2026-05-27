@@ -34,4 +34,4 @@ When a new paper is deposited on Zenodo:
 
 ## Author / maintainer
 
-Rolando (Roli) Bosch · Hermes Labs · rbosch@lpci.ai
+Rolando (Roli) Bosch · Hermes Labs · roli@hermes-labs.ai
