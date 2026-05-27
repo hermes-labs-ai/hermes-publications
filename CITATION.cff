@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Bosch"
     given-names: "Rolando"
-    email: "rbosch@lpci.ai"
+    email: "roli@hermes-labs.ai"
     affiliation: "Hermes Labs"
 url: "https://github.com/hermes-labs-ai/hermes-publications"
 repository-code: "https://github.com/hermes-labs-ai/hermes-publications"
