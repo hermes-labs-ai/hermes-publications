@@ -1,0 +1,23 @@
+{
+  "title": "hermes-publications: DOI-anchored research index for Hermes Labs",
+  "upload_type": "other",
+  "description": "hermes-publications is a DOI-anchored research index that catalogs Hermes Labs publications on epistemic failure modes in LLMs. It provides Zenodo-canonical pointers to each paper, where every cataloged paper resolves to a permanent DOI. Maintained by an independent AI-reliability lab.",
+  "creators": [
+    { "name": "Bosch Rodriguez, Rolando", "orcid": "0009-0005-4896-1112", "affiliation": "Hermes Labs" }
+  ],
+  "keywords": [
+    "ai-reliability",
+    "llm-reliability",
+    "ai-assurance",
+    "epistemic failure modes",
+    "silent failure modes",
+    "research index",
+    "Hermes Labs"
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    { "identifier": "10.5281/zenodo.19042469", "relation": "references", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.18867694", "relation": "references", "scheme": "doi" }
+  ]
+}

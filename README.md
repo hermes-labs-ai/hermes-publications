@@ -1,6 +1,6 @@
-# Hermes Labs — Publications
+# hermes-publications is a DOI-anchored research index
 
-Research publications from Hermes Labs on **epistemic engineering**, the study and engineering of how language models reason, hedge, and represent evidence. Each paper here is published, citable, and DOI-anchored on Zenodo.
+hermes-publications is a DOI-anchored research index that catalogs Hermes Labs publications on epistemic failure modes in LLMs. Each paper here is published, citable, and DOI-anchored on Zenodo.
 
 ---
 
