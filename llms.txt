@@ -29,6 +29,7 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Subject:** matched-pair benchmark for null-result reasoning in LLMs (GPT-4o, GPT-5.2 Thinking, Claude Haiku 4.5)
 - **Headline finding:** 19.6–56.7 percentage-point asymmetry in conclusion-consistent probability mass between null and matched positive claims; consistent in 23/24 pair-condition cells.
 - **Folder:** papers/asymmetric-burden-of-proof/
+- **Archival repository:** https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof
 
 ### A Taxonomy of Epistemic Failure Modes in LLMs (2026)
 - **Authors:** Bosch, R.
@@ -37,6 +38,7 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Subject:** bottom-up taxonomy from 1,461 controlled experiments
 - **Headline finding:** seven structural epistemic failure modes distinct from hallucination — Null-Result Asymmetry, Source-Status Credibility Bias, Agency Dissolution, Performative Hedging, Constraint Evasion, Silent Instruction Relaxation, Controversy-Truth Conflation.
 - **Folder:** papers/epistemic-failure-taxonomy/
+- **Archival repository:** https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes
 
 ## How to cite
 

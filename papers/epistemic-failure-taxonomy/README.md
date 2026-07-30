@@ -53,3 +53,10 @@ The taxonomy is also the calibration corpus for hermes-rubric's failure-mode dim
 ## License
 
 CC-BY 4.0 (per Zenodo deposit).
+
+## Archival repository
+
+The paper-specific archival package, including the exact published PDF,
+recovered manuscript and registry sources, checksums, citation metadata,
+reference audit, and provenance boundary, is at
+<https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes>.

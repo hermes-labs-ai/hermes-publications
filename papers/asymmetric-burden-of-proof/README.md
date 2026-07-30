@@ -45,3 +45,9 @@ This is also the empirical foundation for the **Epistemic Engineering** thesis: 
 ## License
 
 CC-BY 4.0 (per Zenodo deposit).
+
+## Archival repository
+
+The paper-specific archival package, including the exact published PDF,
+checksums, citation metadata, reference audit, and provenance boundary, is at
+<https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof>.

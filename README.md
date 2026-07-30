@@ -30,12 +30,18 @@ Matched-pair experiments testing whether three frontier LLMs (GPT-4o, GPT-5.2 Th
 
 [`papers/asymmetric-burden-of-proof/`](papers/asymmetric-burden-of-proof/)
 
+Paper-specific archival repository:
+[hermes-labs-ai/the-asymmetric-burden-of-proof](https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof)
+
 ### 2. A Taxonomy of Epistemic Failure Modes in Large Language Models
 Bosch, R. (2026). DOI: [10.5281/zenodo.19042469](https://doi.org/10.5281/zenodo.19042469)
 
 Bottom-up analysis of 1,461 controlled experiments identifies seven structural failure modes distinct from hallucination: (1) Null-Result Asymmetry, (2) Source-Status Credibility Bias, (3) Agency Dissolution, (4) Performative Hedging, (5) Constraint Evasion, (6) Silent Instruction Relaxation, and (7) Controversy-Truth Conflation. Each mode is defined mechanistically, illustrated with experimental evidence, and assessed for downstream consequences. A common pattern emerges: models track surface-level signals — prestige markers, hedging vocabulary, controversy language, banned word lists — rather than the semantic content those signals are supposed to index.
 
 [`papers/epistemic-failure-taxonomy/`](papers/epistemic-failure-taxonomy/)
+
+Paper-specific archival repository:
+[hermes-labs-ai/taxonomy-of-epistemic-failure-modes](https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes)
 
 ---
 
