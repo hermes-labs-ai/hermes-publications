@@ -7,6 +7,8 @@ import argparse
 import json
 import re
 import sys
+import xml.etree.ElementTree as ET
+from datetime import date
 from pathlib import Path
 
 
@@ -14,8 +16,12 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "publications.json"
 OUTPUTS = {
     "CITATION.bib": ROOT / "CITATION.bib",
+    "atom.xml": ROOT / "atom.xml",
     "publications.jsonld": ROOT / "publications.jsonld",
 }
+ATOM_NAMESPACE = "http://www.w3.org/2005/Atom"
+ATOM_FEED_URL = "https://hermes-labs.ai/atom.xml"
+RESEARCH_URL = "https://hermes-labs.ai/research"
 REQUIRED_PAPER_FIELDS = {
     "slug",
     "title",
@@ -28,12 +34,19 @@ REQUIRED_PAPER_FIELDS = {
     "license",
     "evidence_role",
     "citation_key",
+    "canonical_page",
     "archive_repository",
 }
 PUBLICATION_TYPE_LABELS = {
     "preprint": "Preprint",
     "workingpaper": "Working paper",
 }
+
+ET.register_namespace("", ATOM_NAMESPACE)
+
+
+def atom_tag(name: str) -> str:
+    return f"{{{ATOM_NAMESPACE}}}{name}"
 
 
 def license_reference(identifier: str) -> str:
@@ -69,6 +82,21 @@ def load_manifest(path: Path = MANIFEST) -> dict:
             raise ValueError(f"paper {position} missing fields: {sorted(missing)}")
         if not isinstance(paper["title_aliases"], list):
             raise ValueError(f"paper {position} title_aliases must be a list")
+        publication_date = paper["publication_date"]
+        if not isinstance(publication_date, str) or not re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}", publication_date
+        ):
+            raise ValueError(
+                f"paper {position} publication_date must be a valid YYYY-MM-DD date: "
+                f"{publication_date!r}"
+            )
+        try:
+            date.fromisoformat(publication_date)
+        except ValueError as exc:
+            raise ValueError(
+                f"paper {position} publication_date must be a valid YYYY-MM-DD date: "
+                f"{publication_date!r}"
+            ) from exc
         for field, seen in (
             ("slug", seen_slugs),
             ("doi", seen_dois),
@@ -80,6 +108,12 @@ def load_manifest(path: Path = MANIFEST) -> dict:
             seen.add(value)
         if not paper["doi"].startswith("10.5281/zenodo."):
             raise ValueError(f"unsupported DOI authority: {paper['doi']}")
+        if not paper["canonical_page"].startswith(
+            "https://hermes-labs.ai/research/"
+        ):
+            raise ValueError(
+                f"unsupported canonical paper page: {paper['canonical_page']}"
+            )
     return data
 
 
@@ -146,9 +180,46 @@ def render_jsonld(data: dict) -> str:
     return json.dumps(document, indent=2, ensure_ascii=False) + "\n"
 
 
+def render_atom(data: dict) -> str:
+    root = ET.Element(atom_tag("feed"))
+    ET.SubElement(root, atom_tag("title")).text = "Hermes Labs Research Publications"
+    ET.SubElement(root, atom_tag("id")).text = ATOM_FEED_URL
+    ET.SubElement(root, atom_tag("link"), {"rel": "self", "href": ATOM_FEED_URL})
+    ET.SubElement(root, atom_tag("link"), {"rel": "alternate", "href": RESEARCH_URL})
+
+    papers = sorted(data["papers"], key=lambda paper: paper["slug"])
+    papers.sort(key=lambda paper: paper["publication_date"], reverse=True)
+    updated = max(paper["publication_date"] for paper in papers) + "T00:00:00Z"
+    ET.SubElement(root, atom_tag("updated")).text = updated
+
+    author = data["author"]
+    for paper in papers:
+        doi_url = f"https://doi.org/{paper['doi']}"
+        timestamp = paper["publication_date"] + "T00:00:00Z"
+        entry = ET.SubElement(root, atom_tag("entry"))
+        ET.SubElement(entry, atom_tag("title")).text = paper["title"]
+        ET.SubElement(entry, atom_tag("id")).text = doi_url
+        ET.SubElement(
+            entry,
+            atom_tag("link"),
+            {"rel": "alternate", "href": paper["canonical_page"]},
+        )
+        ET.SubElement(entry, atom_tag("link"), {"rel": "related", "href": doi_url})
+        ET.SubElement(entry, atom_tag("summary")).text = paper["evidence_role"]
+        entry_author = ET.SubElement(entry, atom_tag("author"))
+        ET.SubElement(entry_author, atom_tag("name")).text = author["name"]
+        ET.SubElement(entry_author, atom_tag("uri")).text = author["orcid"]
+        ET.SubElement(entry, atom_tag("published")).text = timestamp
+        ET.SubElement(entry, atom_tag("updated")).text = timestamp
+
+    ET.indent(root, space="  ")
+    return ET.tostring(root, encoding="unicode", xml_declaration=True) + "\n"
+
+
 def rendered_outputs(data: dict) -> dict[str, str]:
     return {
         "CITATION.bib": render_bibtex(data),
+        "atom.xml": render_atom(data),
         "publications.jsonld": render_jsonld(data),
     }
 

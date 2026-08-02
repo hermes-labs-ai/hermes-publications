@@ -97,9 +97,11 @@ Each paper folder contains a `CITATION.cff` and a citation block in its README. 
   Schema.org `ItemList` of `ScholarlyArticle` records for search and answer
   engines.
 - [`CITATION.bib`](CITATION.bib) is the generated aggregate BibTeX export.
+- [`atom.xml`](atom.xml) is the deterministic Atom 1.0 publication feed,
+  ordered newest-first for feed readers and scholarly discovery agents.
 
 Regenerate the derived exports with `python3 scripts/render_exports.py`; CI
-fails when either generated file is stale.
+fails when any generated file is stale.
 
 Before a release-facing update, run `python3 scripts/verify_zenodo.py` for a
 bounded live comparison of every manifest title, DOI, date, license, and author

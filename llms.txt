@@ -71,6 +71,7 @@ Each paper folder contains a CITATION.cff. Canonical citation is the Zenodo DOI 
 - Canonical structured manifest: publications.json
 - Schema.org scholarly ItemList: publications.jsonld
 - Aggregate BibTeX: CITATION.bib
+- Atom 1.0 publication feed: atom.xml
 
 The generated exports derive from `publications.json`; repository checks fail
 if a title, DOI, folder, citation record, or generated export drifts from that
