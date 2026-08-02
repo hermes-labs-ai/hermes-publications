@@ -4,6 +4,8 @@ hermes-publications is a DOI-anchored index of Hermes Labs research on AI
 reliability, applied epistemology and hermeneutics, and measurement validity.
 Each paper here is published, citable, and DOI-anchored on Zenodo.
 
+Read the complete public collection at [hermes-labs.ai/research](https://hermes-labs.ai/research).
+
 ---
 
 ## Why this exists

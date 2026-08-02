@@ -7,6 +7,8 @@ DOI: [10.5281/zenodo.21652317](https://doi.org/10.5281/zenodo.21652317)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21652317.svg)](https://doi.org/10.5281/zenodo.21652317)
 
+Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
+
 ## Abstract
 
 Agent systems are increasingly evaluated and modified through operational
