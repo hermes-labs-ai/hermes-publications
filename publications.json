@@ -23,6 +23,7 @@
       "license": "CC-BY-4.0",
       "evidence_role": "Empirical matched-vignette study of null-result asymmetry.",
       "citation_key": "bosch2026asymmetric",
+      "canonical_page": "https://hermes-labs.ai/research/the-asymmetric-burden-of-proof",
       "archive_repository": "https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof"
     },
     {
@@ -39,6 +40,7 @@
       "license": "CC-BY-4.0",
       "evidence_role": "Empirical taxonomy derived from 1,461 controlled experiments.",
       "citation_key": "bosch2026taxonomy",
+      "canonical_page": "https://hermes-labs.ai/research/taxonomy-of-epistemic-failure-modes",
       "archive_repository": "https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes"
     },
     {
@@ -53,6 +55,7 @@
       "license": "CC-BY-4.0",
       "evidence_role": "Empirical naturalistic audit of measurement validity in AI agent telemetry.",
       "citation_key": "bosch2026preciserecords",
+      "canonical_page": "https://hermes-labs.ai/research/precise-records-unstable-meanings",
       "archive_repository": "https://github.com/hermes-labs-ai/precise-records-unstable-meanings"
     },
     {
@@ -67,6 +70,7 @@
       "license": "CC-BY-4.0",
       "evidence_role": "Conceptual framework for model self-report, provenance, and recursive interpretive conditioning.",
       "citation_key": "bosch2026generativehorizon",
+      "canonical_page": "https://hermes-labs.ai/research/the-generative-horizon",
       "archive_repository": "https://github.com/hermes-labs-ai/the-generative-horizon"
     }
   ]

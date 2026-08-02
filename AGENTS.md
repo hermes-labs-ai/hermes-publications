@@ -13,6 +13,10 @@ A canonical, DOI-anchored index of Hermes Labs research publications. Each paper
   - `CITATION.cff` — machine-readable citation.
   - cross-references to the open-source tool(s) that operationalize the paper's findings, when applicable.
 - `CITATION.cff` (top-level) — citation for the repository as a whole.
+- `distribution/` — timestamped, partial distribution snapshots and an
+  evidence-bound continuation protocol. These snapshots help agents avoid
+  repeating prior work; they do not replace the canonical publication index or
+  the operational distribution workspace.
 
 ## Rules
 
