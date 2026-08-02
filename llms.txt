@@ -2,6 +2,8 @@
 
 Research publications from Hermes Labs on **applied epistemology and hermeneutics** — empirical studies of how autonomous AI agents fail to know what is true (epistemic failures) and to preserve meaning across pipelines (hermeneutic failures), and the **linguistic infrastructure** that closes those failures.
 
+Public reading collection: https://hermes-labs.ai/research
+
 ## Why this exists
 
 Hermes Labs treats AI reliability not as a math problem, but as a language problem. The name derives from the Greek messenger god Hermes — the root of hermeneutics, the study of interpretation. Two old questions from philosophy sit underneath the work:
