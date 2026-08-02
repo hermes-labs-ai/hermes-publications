@@ -7,6 +7,8 @@ DOI: [10.5281/zenodo.21659634](https://doi.org/10.5281/zenodo.21659634)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21659634.svg)](https://doi.org/10.5281/zenodo.21659634)
 
+Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
+
 ## Abstract
 
 For language-model agents, language is simultaneously an object of
