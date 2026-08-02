@@ -26,11 +26,14 @@ A canonical, DOI-anchored index of Hermes Labs research publications. Each paper
 
 When a new paper is deposited on Zenodo:
 
-1. Create `papers/<slug>/README.md` with abstract, DOI link, plain-language summary, citation block.
-2. Create `papers/<slug>/CITATION.cff`.
-3. Update top-level `README.md` and `llms.txt` paper indices.
-4. Cross-link from the operationalizing tool repo's README, if applicable.
-5. Run external-framing-lint on README + llms.txt before push (repository invariant).
+1. Add the published identity to `publications.json` from the Zenodo record.
+2. Create `papers/<slug>/README.md` with abstract, DOI link, plain-language summary, citation block.
+3. Create `papers/<slug>/CITATION.cff`.
+4. Update top-level `README.md`, `llms.txt`, `CITATION.cff`, and `.zenodo.json`.
+5. Run `python3 scripts/render_exports.py` to regenerate BibTeX and JSON-LD.
+6. Cross-link from the operationalizing tool repo's README, if applicable.
+7. Run `python3 scripts/render_exports.py --check`, `python3 scripts/check_publications.py`, and `python3 scripts/verify_zenodo.py`.
+8. Run external-framing-lint on README + llms.txt before push (repository invariant).
 
 ## Author / maintainer
 
