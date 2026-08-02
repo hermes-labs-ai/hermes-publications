@@ -23,38 +23,29 @@ class Paper:
     family_name: str
 
 
-PAPERS = {
-    "asymmetric-burden-of-proof": Paper(
-        title="The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark",
-        label="The Asymmetric Burden of Proof",
-        label_aliases=(),
-        doi="10.5281/zenodo.18867694",
-        family_name="Bosch Rodriguez",
-    ),
-    "epistemic-failure-taxonomy": Paper(
-        title="A Taxonomy of Epistemic Failure Modes in Large Language Models",
-        label="A Taxonomy of Epistemic Failure Modes in Large Language Models",
-        label_aliases=("A Taxonomy of Epistemic Failure Modes in LLMs",),
-        doi="10.5281/zenodo.19042469",
-        family_name="Bosch Rodriguez",
-    ),
-    "precise-records-unstable-meanings": Paper(
-        title="Precise Records, Unstable Meanings: Measurement Validity and Unsupported Claims Derived from AI Agent Telemetry",
-        label="Precise Records, Unstable Meanings",
-        label_aliases=(),
-        doi="10.5281/zenodo.21652317",
-        family_name="Bosch",
-    ),
-    "generative-horizon": Paper(
-        title="The Generative Horizon: Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report",
-        label="The Generative Horizon",
-        label_aliases=(),
-        doi="10.5281/zenodo.21659634",
-        family_name="Bosch",
-    ),
-}
 DOI_PATTERN = re.compile(r"10\.5281/zenodo\.\d+")
 MARKDOWN_LINK_PATTERN = re.compile(r"\[[^]]*]\(([^)]+)\)")
+
+
+def load_papers(root: Path) -> dict[str, Paper]:
+    data = json.loads((root / "publications.json").read_text(encoding="utf-8"))
+    if data.get("schema") != "hermes.publications/v1":
+        raise ValueError("unsupported or missing publications schema")
+    papers: dict[str, Paper] = {}
+    for entry in data.get("papers", []):
+        slug = entry["slug"]
+        if slug in papers:
+            raise ValueError(f"duplicate paper slug: {slug}")
+        papers[slug] = Paper(
+            title=entry["title"],
+            label=entry["short_title"],
+            label_aliases=tuple(entry["title_aliases"]),
+            doi=entry["doi"],
+            family_name=entry["citation_family_name"],
+        )
+    if not papers:
+        raise ValueError("publications manifest contains no papers")
+    return papers
 
 
 def dois(text: str) -> set[str]:
@@ -103,8 +94,12 @@ def citation_references(text: str) -> dict[str, tuple[str, str, str]]:
 
 def check(root: Path = ROOT) -> list[str]:
     errors: list[str] = []
-    expected_slugs = set(PAPERS)
-    expected_dois = {paper.doi for paper in PAPERS.values()}
+    try:
+        papers = load_papers(root)
+    except (KeyError, OSError, TypeError, ValueError, json.JSONDecodeError) as exc:
+        return [f"publications.json: {exc}"]
+    expected_slugs = set(papers)
+    expected_dois = {paper.doi for paper in papers.values()}
 
     actual_slugs = {path.name for path in (root / "papers").iterdir() if path.is_dir()}
     if actual_slugs != expected_slugs:
@@ -117,7 +112,7 @@ def check(root: Path = ROOT) -> list[str]:
     top_cff = (root / "CITATION.cff").read_text(encoding="utf-8")
     zenodo = json.loads((root / ".zenodo.json").read_text(encoding="utf-8"))
 
-    for slug, paper in PAPERS.items():
+    for slug, paper in papers.items():
         folder = root / "papers" / slug
         readme_path = folder / "README.md"
         cff_path = folder / "CITATION.cff"
@@ -155,7 +150,7 @@ def check(root: Path = ROOT) -> list[str]:
         errors.append(
             f"CITATION.cff DOI set differs: expected {sorted(expected_dois)}, got {sorted(references)}"
         )
-    for paper in PAPERS.values():
+    for paper in papers.values():
         expected_reference = (paper.title, paper.family_name, "Rolando")
         if references.get(paper.doi) != expected_reference:
             errors.append(
@@ -182,7 +177,9 @@ def main() -> int:
         for error in errors:
             print(f"FAIL: {error}", file=sys.stderr)
         return 1
-    print(f"PASS: {len(PAPERS)} papers agree across folders, indices, and citation metadata")
+    print(
+        f"PASS: {len(load_papers(ROOT))} papers agree across manifest, folders, indices, and citation metadata"
+    )
     return 0
 
 

@@ -17,5 +17,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: |
+          python scripts/render_exports.py --check
           python scripts/check_publications.py
           python -m unittest discover -s tests

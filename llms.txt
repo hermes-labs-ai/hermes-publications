@@ -64,6 +64,16 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 
 Each paper folder contains a CITATION.cff. Canonical citation is the Zenodo DOI for each work. CC-BY 4.0 license per Zenodo deposit.
 
+## Machine-readable research identity
+
+- Canonical structured manifest: publications.json
+- Schema.org scholarly ItemList: publications.jsonld
+- Aggregate BibTeX: CITATION.bib
+
+The generated exports derive from `publications.json`; repository checks fail
+if a title, DOI, folder, citation record, or generated export drifts from that
+identity source.
+
 ## About Hermes Labs
 
 Hermes Labs is an independent AI reliability research lab. Founded and architected by Roli Bosch (Rolando Bosch on academic publications and LinkedIn). Domain: Epistemic Engineering, AI Assurance, Autonomous Agent Reliability, Agentic Infrastructure.

@@ -86,6 +86,23 @@ Paper-specific archival repository:
 
 Each paper folder contains a `CITATION.cff` and a citation block in its README. The canonical home for each paper is the Zenodo DOI; this repository aggregates metadata, plain-language summaries, and pointers to the tools that operationalize the findings.
 
+## Machine-readable reuse
+
+- [`publications.json`](publications.json) is the single structured identity
+  source for the four-paper program: title, DOI, date, evidence role, license,
+  citation key, folder slug, and archival repository.
+- [`publications.jsonld`](publications.jsonld) exposes the same identities as a
+  Schema.org `ItemList` of `ScholarlyArticle` records for search and answer
+  engines.
+- [`CITATION.bib`](CITATION.bib) is the generated aggregate BibTeX export.
+
+Regenerate the derived exports with `python3 scripts/render_exports.py`; CI
+fails when either generated file is stale.
+
+Before a release-facing update, run `python3 scripts/verify_zenodo.py` for a
+bounded live comparison of every manifest title, DOI, date, license, and author
+ORCID against the canonical Zenodo API records.
+
 ## Tools that operationalize this research
 
 The findings here drive the open-source reliability infrastructure published under [hermes-labs-ai](https://github.com/hermes-labs-ai). Cross-references appear in each paper folder.
