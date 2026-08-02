@@ -10,12 +10,16 @@ them.
 
 ## Current snapshot
 
+- [2026-08-02 18:42 EDT local website integration](20260802T1842-0400-atom-site-local/SNAPSHOT.md)
+- [Website integration status](20260802T1842-0400-atom-site-local/STATUS.md)
+- [Website integration evidence](20260802T1842-0400-atom-site-local/EVIDENCE.md)
+
+Prior snapshots:
+
 - [2026-08-02 18:18 EDT local Atom implementation](20260802T1818-0400-atom-local/SNAPSHOT.md)
 - [Local implementation status](20260802T1818-0400-atom-local/STATUS.md)
 - [Local implementation evidence](20260802T1818-0400-atom-local/EVIDENCE.md)
 - [Continuation protocol](20260802T1751-0400-partial/CONTINUE.md)
-
-Prior snapshot:
 
 - [2026-08-02 17:51 EDT partial distribution reconstruction](20260802T1751-0400-partial/SNAPSHOT.md)
 
