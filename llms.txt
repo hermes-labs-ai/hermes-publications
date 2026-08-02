@@ -40,6 +40,26 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Folder:** papers/epistemic-failure-taxonomy/
 - **Archival repository:** https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes
 
+### Precise Records, Unstable Meanings (2026)
+- **Authors:** Bosch, R.
+- **DOI:** 10.5281/zenodo.21652317
+- **URL:** https://doi.org/10.5281/zenodo.21652317
+- **Subject:** measurement validity and unsupported claims derived from AI agent telemetry
+- **Evidence boundary:** a twelve-week naturalistic audit supports declared record-level measurements, not logical-session duration, completed tasks, correct outcomes, or failure prevalence without additional validation.
+- **Method:** Telemetry-to-Claim Gate for provenance, analytical unit, construct, population, window, denominator, validation, and sensitivity.
+- **Folder:** papers/precise-records-unstable-meanings/
+- **Archival repository:** https://github.com/hermes-labs-ai/precise-records-unstable-meanings
+
+### The Generative Horizon (2026)
+- **Authors:** Bosch, R.
+- **DOI:** 10.5281/zenodo.21659634
+- **URL:** https://doi.org/10.5281/zenodo.21659634
+- **Subject:** applied hermeneutics, linguistic attractors, model self-report, and recursive interpretive conditioning
+- **Thesis:** the represented linguistic situation is not only what a model computes about; it becomes operative in the computation that produces the next representation.
+- **Evidence boundary:** a conceptual framework, not a claim of an inner observer, privileged access, phenomenal awareness, or empirical validation of its companion telemetry study.
+- **Folder:** papers/generative-horizon/
+- **Archival repository:** https://github.com/hermes-labs-ai/the-generative-horizon
+
 ## How to cite
 
 Each paper folder contains a CITATION.cff. Canonical citation is the Zenodo DOI for each work. CC-BY 4.0 license per Zenodo deposit.
@@ -58,7 +78,7 @@ The canonical positioning of the lab — Epistemic Engineering, the model-as-sub
 
 - **Zero-LLM agent memory at competitive accuracy.** fidelis 73.0% end-to-end QA on LongMemEval-S (Wilson 95% CI [68.7%, 77.0%]) with no LLM in the default retrieval path. Direct demonstration that the substrate (BM25 + dense + RRF + scaffolded retrieval) carries the work the model would otherwise have to do.
 
-- **Research papers.** [The Asymmetric Burden of Proof](https://doi.org/10.5281/zenodo.18867694) and [A Taxonomy of Epistemic Failure Modes in LLMs](https://doi.org/10.5281/zenodo.19042469) on Zenodo. 1,500+ controlled adversarial evaluations.
+- **Research papers.** [The Asymmetric Burden of Proof](https://doi.org/10.5281/zenodo.18867694), [A Taxonomy of Epistemic Failure Modes in LLMs](https://doi.org/10.5281/zenodo.19042469), [Precise Records, Unstable Meanings](https://doi.org/10.5281/zenodo.21652317), and [The Generative Horizon](https://doi.org/10.5281/zenodo.21659634) on Zenodo. The papers have distinct evidence roles and do not share one dataset or validate one another. The taxonomy is based on 1,461 controlled experiments.
 
 - **IP.** 5 US patent filings (1 non-provisional pending, 4 provisional).
 

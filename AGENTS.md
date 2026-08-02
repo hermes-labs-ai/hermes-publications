@@ -30,7 +30,8 @@ When a new paper is deposited on Zenodo:
 2. Create `papers/<slug>/CITATION.cff`.
 3. Update top-level `README.md` and `llms.txt` paper indices.
 4. Cross-link from the operationalizing tool repo's README, if applicable.
-5. Run external-framing-lint on README + llms.txt before push (repository invariant).
+5. Run `python3 scripts/check_publications.py` and resolve any index drift.
+6. Run external-framing-lint on README + llms.txt before push (repository invariant).
 
 ## Author / maintainer
 
