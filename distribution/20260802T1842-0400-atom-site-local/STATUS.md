@@ -19,9 +19,15 @@
   `roli-lpci/hermes-labs-v2`, open the exact PR, merge/deploy through the normal
   website route, and perform one public readback.
 
+## Public baseline
+
+- `CONFIRMED_PUBLIC_READBACK` — at 2026-08-02 22:45 UTC, the live Atom URL
+  returned HTTP 404 and the live homepage had no Atom discovery link.
+
 ## Nonclaims
 
-- The public feed does not yet exist as established by this snapshot.
+- The public feed was absent at the exact baseline time; later state requires a
+  fresh readback.
 - No discovery, indexing, subscription, citation, traffic, or download effect
   is claimed.
 - The Atom landing-page semantics do not claim Crossref Event Data support.

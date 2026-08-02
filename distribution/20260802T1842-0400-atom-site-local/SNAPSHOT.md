@@ -7,7 +7,7 @@ state: LOCAL_WEBSITE_INTEGRATION_READY
 captured_at_local: 2026-08-02 18:42 EDT
 captured_at_utc: 2026-08-02 22:42 UTC
 public_effect: NONE
-canonical_public_state_claim: NONE
+canonical_public_state_claim: ATOM_ENDPOINT_404_AND_DISCOVERY_LINK_ABSENT
 supersedes_in_part: E-010, E-012
 ```
 
@@ -31,8 +31,15 @@ supersedes_in_part: E-010, E-012
 
 ## Boundary
 
-Neither branch was pushed. No PR, deployment, submission, message, or public
-readback occurred. Crossref Event Data remains excluded as a rationale because
-the service was sunset in April 2026.
+Neither branch was pushed. No PR, deployment, submission, message, or other
+public mutation occurred. Crossref Event Data remains excluded as a rationale
+because the service was sunset in April 2026.
+
+## Contemporaneous public baseline
+
+At 2026-08-02 22:45 UTC, `https://hermes-labs.ai/atom.xml` returned HTTP 404
+from Vercel and the rendered homepage contained neither `/atom.xml` nor an
+`application/atom+xml` link. This read-only baseline is the comparison point
+for the parked deployment; it is not a distribution effect.
 
 PARKED: owner authorization for the exact two branch pushes and website deployment, followed by readback of `https://hermes-labs.ai/atom.xml` and the homepage discovery link.
