@@ -43,6 +43,23 @@ class PublicationExportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "duplicate doi"):
             load_manifest(path)
 
+    def test_jsonld_license_derives_from_manifest(self) -> None:
+        data = load_manifest(self.root / "publications.json")
+        data["papers"][0]["license"] = "CC0-1.0"
+        jsonld = json.loads(rendered_outputs(data)["publications.jsonld"])
+        self.assertEqual(
+            jsonld["itemListElement"][0]["item"]["license"],
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+        )
+
+    def test_bibtex_does_not_relabel_unknown_publication_type(self) -> None:
+        data = load_manifest(self.root / "publications.json")
+        data["papers"][0]["publication_type"] = "report"
+        bibtex = rendered_outputs(data)["CITATION.bib"]
+        first_record = bibtex.split("\n\n", 1)[0]
+        self.assertIn("note         = {report}", first_record)
+        self.assertNotIn("note         = {Preprint}", first_record)
+
 
 if __name__ == "__main__":
     unittest.main()

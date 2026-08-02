@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -29,6 +30,26 @@ REQUIRED_PAPER_FIELDS = {
     "citation_key",
     "archive_repository",
 }
+PUBLICATION_TYPE_LABELS = {
+    "preprint": "Preprint",
+    "workingpaper": "Working paper",
+}
+
+
+def license_reference(identifier: str) -> str:
+    normalized = identifier.lower()
+    if normalized == "cc0-1.0":
+        return "https://creativecommons.org/publicdomain/zero/1.0/"
+    creative_commons = re.fullmatch(
+        r"cc-(?P<terms>by(?:-[a-z]+)*)-(?P<version>\d+\.\d+)",
+        normalized,
+    )
+    if creative_commons:
+        return (
+            "https://creativecommons.org/licenses/"
+            f"{creative_commons.group('terms')}/{creative_commons.group('version')}/"
+        )
+    return identifier
 
 
 def load_manifest(path: Path = MANIFEST) -> dict:
@@ -66,7 +87,8 @@ def render_bibtex(data: dict) -> str:
     author = data["author"]["name"]
     blocks: list[str] = []
     for paper in data["papers"]:
-        note = "Working paper" if paper["publication_type"] == "workingpaper" else "Preprint"
+        publication_type = paper["publication_type"]
+        note = PUBLICATION_TYPE_LABELS.get(publication_type, publication_type)
         title = paper["title"]
         blocks.append(
             "\n".join(
@@ -106,7 +128,7 @@ def render_jsonld(data: dict) -> str:
                         "identifier": author["orcid"],
                     },
                     "publisher": {"@type": "Organization", "name": "Zenodo"},
-                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "license": license_reference(paper["license"]),
                     "url": doi_url,
                     "sameAs": paper["archive_repository"],
                     "description": paper["evidence_role"],
