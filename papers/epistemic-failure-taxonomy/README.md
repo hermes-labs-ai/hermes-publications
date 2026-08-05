@@ -5,6 +5,8 @@ DOI: [10.5281/zenodo.19042469](https://doi.org/10.5281/zenodo.19042469)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19042469.svg)](https://doi.org/10.5281/zenodo.19042469)
 
+Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
+
 ## Abstract
 
 Large language models (LLMs) exhibit systematic distortions in how they evaluate, represent, and communicate epistemic states. These distortions are distinct from hallucination — they concern cases where the model's expressed confidence, standards of scrutiny, or assignment of causality diverge from what the evidence warrants, even when the factual content is roughly correct. Through bottom-up analysis of 1,461 controlled experiments conducted primarily on GPT-4o, we identify seven structural failure modes: (1) Null-Result Asymmetry, (2) Source-Status Credibility Bias, (3) Agency Dissolution, (4) Performative Hedging, (5) Constraint Evasion, (6) Silent Instruction Relaxation, and (7) Controversy-Truth Conflation. Each mode is defined mechanistically, illustrated with experimental evidence, and assessed for downstream consequences. Across the seven modes, a common pattern emerges: models track surface-level signals — prestige markers, hedging vocabulary, controversy language, banned word lists — rather than the semantic content those signals are supposed to index.
@@ -53,3 +55,10 @@ The taxonomy is also the calibration corpus for hermes-rubric's failure-mode dim
 ## License
 
 CC-BY 4.0 (per Zenodo deposit).
+
+## Archival repository
+
+The paper-specific archival package, including the exact published PDF,
+recovered manuscript and registry sources, checksums, citation metadata,
+reference audit, and provenance boundary, is at
+<https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes>.

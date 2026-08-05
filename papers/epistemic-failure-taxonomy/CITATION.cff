@@ -1,24 +1,24 @@
 cff-version: 1.2.0
-title: "A Taxonomy of Epistemic Failure Modes in Large Language Models"
-message: "If you reference this work, please cite the Zenodo DOI."
-type: article
+message: "Please cite the paper using the preferred citation below."
+title: "Hermes Labs publication metadata: A Taxonomy of Epistemic Failure Modes in Large Language Models"
+type: dataset
 authors:
-  - family-names: "Bosch"
+  - family-names: "Bosch Rodriguez"
     given-names: "Rolando"
     email: "roli@hermes-labs.ai"
+    orcid: "https://orcid.org/0009-0005-4896-1112"
     affiliation: "Hermes Labs"
-year: 2026
-doi: "10.5281/zenodo.19042469"
-url: "https://doi.org/10.5281/zenodo.19042469"
-license: CC-BY-4.0
-keywords:
-  - "large language models"
-  - "epistemic failure"
-  - "taxonomy"
-  - "null-result bias"
-  - "sycophancy"
-  - "calibration"
-  - "AI safety"
-  - "LLM evaluation"
-  - "AI alignment"
-  - "behavioral evaluation"
+date-released: 2026-03-15
+repository: "https://github.com/hermes-labs-ai/hermes-publications/tree/main/papers/epistemic-failure-taxonomy"
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Taxonomy of Epistemic Failure Modes in Large Language Models"
+  authors:
+    - family-names: "Bosch Rodriguez"
+      given-names: "Rolando"
+      orcid: "https://orcid.org/0009-0005-4896-1112"
+      affiliation: "Hermes Labs"
+  year: 2026
+  doi: "10.5281/zenodo.19042469"
+  url: "https://doi.org/10.5281/zenodo.19042469"

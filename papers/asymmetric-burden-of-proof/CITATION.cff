@@ -1,22 +1,24 @@
 cff-version: 1.2.0
-title: "The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark"
-message: "If you reference this work, please cite the Zenodo DOI."
-type: article
+message: "Please cite the paper using the preferred citation below."
+title: "Hermes Labs publication metadata: The Asymmetric Burden of Proof"
+type: dataset
 authors:
-  - family-names: "Bosch"
+  - family-names: "Bosch Rodriguez"
     given-names: "Rolando"
     email: "roli@hermes-labs.ai"
+    orcid: "https://orcid.org/0009-0005-4896-1112"
     affiliation: "Hermes Labs"
-year: 2026
-doi: "10.5281/zenodo.18867694"
-url: "https://doi.org/10.5281/zenodo.18867694"
-license: CC-BY-4.0
-keywords:
-  - "large language models"
-  - "LLM evaluation"
-  - "null-result bias"
-  - "epistemic failure"
-  - "AI safety"
-  - "evidence synthesis"
-  - "calibration"
-  - "matched-vignette benchmark"
+date-released: 2026-03-04
+repository: "https://github.com/hermes-labs-ai/hermes-publications/tree/main/papers/asymmetric-burden-of-proof"
+license: MIT
+preferred-citation:
+  type: article
+  title: "The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark"
+  authors:
+    - family-names: "Bosch Rodriguez"
+      given-names: "Rolando"
+      orcid: "https://orcid.org/0009-0005-4896-1112"
+      affiliation: "Hermes Labs"
+  year: 2026
+  doi: "10.5281/zenodo.18867694"
+  url: "https://doi.org/10.5281/zenodo.18867694"

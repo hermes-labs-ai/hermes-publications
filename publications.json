@@ -1,0 +1,77 @@
+{
+  "schema": "hermes.publications/v1",
+  "publisher": {
+    "name": "Hermes Labs",
+    "url": "https://hermes-labs.ai"
+  },
+  "author": {
+    "name": "Rolando Bosch",
+    "family_name": "Bosch",
+    "given_name": "Rolando",
+    "orcid": "https://orcid.org/0009-0005-4896-1112"
+  },
+  "papers": [
+    {
+      "slug": "asymmetric-burden-of-proof",
+      "title": "The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark",
+      "short_title": "The Asymmetric Burden of Proof",
+      "title_aliases": [],
+      "citation_family_name": "Bosch Rodriguez",
+      "doi": "10.5281/zenodo.18867694",
+      "publication_date": "2026-03-04",
+      "publication_type": "workingpaper",
+      "license": "CC-BY-4.0",
+      "evidence_role": "Empirical matched-vignette study of null-result asymmetry.",
+      "citation_key": "bosch2026asymmetric",
+      "canonical_page": "https://hermes-labs.ai/research/the-asymmetric-burden-of-proof",
+      "archive_repository": "https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof"
+    },
+    {
+      "slug": "epistemic-failure-taxonomy",
+      "title": "A Taxonomy of Epistemic Failure Modes in Large Language Models",
+      "short_title": "A Taxonomy of Epistemic Failure Modes in Large Language Models",
+      "title_aliases": [
+        "A Taxonomy of Epistemic Failure Modes in LLMs"
+      ],
+      "citation_family_name": "Bosch Rodriguez",
+      "doi": "10.5281/zenodo.19042469",
+      "publication_date": "2026-03-15",
+      "publication_type": "preprint",
+      "license": "CC-BY-4.0",
+      "evidence_role": "Empirical taxonomy derived from 1,461 controlled experiments.",
+      "citation_key": "bosch2026taxonomy",
+      "canonical_page": "https://hermes-labs.ai/research/taxonomy-of-epistemic-failure-modes",
+      "archive_repository": "https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes"
+    },
+    {
+      "slug": "precise-records-unstable-meanings",
+      "title": "Precise Records, Unstable Meanings: Measurement Validity and Unsupported Claims Derived from AI Agent Telemetry",
+      "short_title": "Precise Records, Unstable Meanings",
+      "title_aliases": [],
+      "citation_family_name": "Bosch",
+      "doi": "10.5281/zenodo.21652317",
+      "publication_date": "2026-07-30",
+      "publication_type": "preprint",
+      "license": "CC-BY-4.0",
+      "evidence_role": "Empirical naturalistic audit of measurement validity in AI agent telemetry.",
+      "citation_key": "bosch2026preciserecords",
+      "canonical_page": "https://hermes-labs.ai/research/precise-records-unstable-meanings",
+      "archive_repository": "https://github.com/hermes-labs-ai/precise-records-unstable-meanings"
+    },
+    {
+      "slug": "generative-horizon",
+      "title": "The Generative Horizon: Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report",
+      "short_title": "The Generative Horizon",
+      "title_aliases": [],
+      "citation_family_name": "Bosch",
+      "doi": "10.5281/zenodo.21659634",
+      "publication_date": "2026-07-30",
+      "publication_type": "preprint",
+      "license": "CC-BY-4.0",
+      "evidence_role": "Conceptual framework for model self-report, provenance, and recursive interpretive conditioning.",
+      "citation_key": "bosch2026generativehorizon",
+      "canonical_page": "https://hermes-labs.ai/research/the-generative-horizon",
+      "archive_repository": "https://github.com/hermes-labs-ai/the-generative-horizon"
+    }
+  ]
+}

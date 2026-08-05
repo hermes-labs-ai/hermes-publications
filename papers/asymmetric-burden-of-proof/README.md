@@ -7,6 +7,8 @@ DOI: [10.5281/zenodo.18867694](https://doi.org/10.5281/zenodo.18867694)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18867694.svg)](https://doi.org/10.5281/zenodo.18867694)
 
+Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
+
 ## Abstract
 
 We report matched-pair experiments testing whether large language models apply symmetric evidential standards to positive and null scientific claims. Three models (GPT-4o, GPT-5.2 Thinking, Claude Haiku 4.5) evaluated fictional scientific vignettes in which evidence quality was held constant while only the conclusion direction was reversed. Across all six model-format conditions, models allocated less conclusion-consistent probability mass to null claims than to matched positive claims (gaps of 19.6–56.7 percentage points; all bootstrap 95% CIs excluding zero). The asymmetry was directionally consistent in 23 of 24 pair-condition cells and persisted even when discrete classification labels collapsed entirely, surfacing through probability allocation rather than categorical commitment. We characterize this as an asymmetric burden of proof: models treat non-detection as more provisional than matched detection claims, with implications for evidence synthesis, safety assessment, and decision-support pipelines that rely on LLM-generated confidence scores.
@@ -45,3 +47,9 @@ This is also the empirical foundation for the **Epistemic Engineering** thesis: 
 ## License
 
 CC-BY 4.0 (per Zenodo deposit).
+
+## Archival repository
+
+The paper-specific archival package, including the exact published PDF,
+checksums, citation metadata, reference audit, and provenance boundary, is at
+<https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof>.

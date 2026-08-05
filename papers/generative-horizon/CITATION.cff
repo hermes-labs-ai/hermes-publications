@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the paper using the preferred citation below."
+title: "Hermes Labs publication metadata: The Generative Horizon"
+type: dataset
+authors:
+  - family-names: "Bosch"
+    given-names: "Rolando"
+    orcid: "https://orcid.org/0009-0005-4896-1112"
+    affiliation: "Hermes Labs"
+date-released: 2026-07-30
+repository: "https://github.com/hermes-labs-ai/hermes-publications/tree/main/papers/generative-horizon"
+license: MIT
+preferred-citation:
+  type: article
+  title: "The Generative Horizon: Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report"
+  authors:
+    - family-names: "Bosch"
+      given-names: "Rolando"
+      orcid: "https://orcid.org/0009-0005-4896-1112"
+      affiliation: "Hermes Labs"
+  year: 2026
+  doi: "10.5281/zenodo.21659634"
+  url: "https://doi.org/10.5281/zenodo.21659634"

@@ -2,6 +2,8 @@
 
 Research publications from Hermes Labs on **applied epistemology and hermeneutics** — empirical studies of how autonomous AI agents fail to know what is true (epistemic failures) and to preserve meaning across pipelines (hermeneutic failures), and the **linguistic infrastructure** that closes those failures.
 
+Public reading collection: https://hermes-labs.ai/research
+
 ## Why this exists
 
 Hermes Labs treats AI reliability not as a math problem, but as a language problem. The name derives from the Greek messenger god Hermes — the root of hermeneutics, the study of interpretation. Two old questions from philosophy sit underneath the work:
@@ -29,6 +31,7 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Subject:** matched-pair benchmark for null-result reasoning in LLMs (GPT-4o, GPT-5.2 Thinking, Claude Haiku 4.5)
 - **Headline finding:** 19.6–56.7 percentage-point asymmetry in conclusion-consistent probability mass between null and matched positive claims; consistent in 23/24 pair-condition cells.
 - **Folder:** papers/asymmetric-burden-of-proof/
+- **Archival repository:** https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof
 
 ### A Taxonomy of Epistemic Failure Modes in LLMs (2026)
 - **Authors:** Bosch, R.
@@ -37,10 +40,42 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Subject:** bottom-up taxonomy from 1,461 controlled experiments
 - **Headline finding:** seven structural epistemic failure modes distinct from hallucination — Null-Result Asymmetry, Source-Status Credibility Bias, Agency Dissolution, Performative Hedging, Constraint Evasion, Silent Instruction Relaxation, Controversy-Truth Conflation.
 - **Folder:** papers/epistemic-failure-taxonomy/
+- **Archival repository:** https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes
+
+### Precise Records, Unstable Meanings (2026)
+- **Authors:** Bosch, R.
+- **DOI:** 10.5281/zenodo.21652317
+- **URL:** https://doi.org/10.5281/zenodo.21652317
+- **Subject:** measurement validity and unsupported claims derived from AI agent telemetry
+- **Evidence boundary:** a twelve-week naturalistic audit supports declared record-level measurements, not logical-session duration, completed tasks, correct outcomes, or failure prevalence without additional validation.
+- **Method:** Telemetry-to-Claim Gate for provenance, analytical unit, construct, population, window, denominator, validation, and sensitivity.
+- **Folder:** papers/precise-records-unstable-meanings/
+- **Archival repository:** https://github.com/hermes-labs-ai/precise-records-unstable-meanings
+
+### The Generative Horizon (2026)
+- **Authors:** Bosch, R.
+- **DOI:** 10.5281/zenodo.21659634
+- **URL:** https://doi.org/10.5281/zenodo.21659634
+- **Subject:** applied hermeneutics, linguistic attractors, model self-report, and recursive interpretive conditioning
+- **Thesis:** the represented linguistic situation is not only what a model computes about; it becomes operative in the computation that produces the next representation.
+- **Evidence boundary:** a conceptual framework, not a claim of an inner observer, privileged access, phenomenal awareness, or empirical validation of its companion telemetry study.
+- **Folder:** papers/generative-horizon/
+- **Archival repository:** https://github.com/hermes-labs-ai/the-generative-horizon
 
 ## How to cite
 
 Each paper folder contains a CITATION.cff. Canonical citation is the Zenodo DOI for each work. CC-BY 4.0 license per Zenodo deposit.
+
+## Machine-readable research identity
+
+- Canonical structured manifest: publications.json
+- Schema.org scholarly ItemList: publications.jsonld
+- Aggregate BibTeX: CITATION.bib
+- Atom 1.0 publication feed: atom.xml
+
+The generated exports derive from `publications.json`; repository checks fail
+if a title, DOI, folder, citation record, or generated export drifts from that
+identity source.
 
 ## About Hermes Labs
 
@@ -54,11 +89,9 @@ The canonical positioning of the lab — Epistemic Engineering, the model-as-sub
 
 - **Merged upstream into AI agent frameworks.** [langchain-ai/langchain#35544](https://github.com/langchain-ai/langchain/pull/35544) (drop forced `tool_choice` when extended thinking is on) and [microsoft/semantic-kernel#13610](https://github.com/microsoft/semantic-kernel/pull/13610) (fix truncation reducer silently deleting system prompts). Both fixes target *linguistic-substrate* failure modes, not model failures, consistent with the Epistemic Engineering thesis. Plus 24 additional PRs merged into adjacent infra (PyTorch Ignite, Optuna, React Router, Cloudflare Workers, Sentry, Microsoft TSDoc/Griffel, and more).
 
-- **Reproducibility of evidence-first scoring.** hermes-rubric Cohen's κ = 0.629 cross-model on 96 paired runs across 3 model families. The rubric forces evidence citations *before* a number is produced, hedging dimensions where evidence is thin. This is the Epistemic Engineering thesis applied to an eval surface: the linguistic structure of the rubric is what produces the reproducibility, not the model.
-
 - **Zero-LLM agent memory at competitive accuracy.** fidelis 73.0% end-to-end QA on LongMemEval-S (Wilson 95% CI [68.7%, 77.0%]) with no LLM in the default retrieval path. Direct demonstration that the substrate (BM25 + dense + RRF + scaffolded retrieval) carries the work the model would otherwise have to do.
 
-- **Research papers.** [The Asymmetric Burden of Proof](https://doi.org/10.5281/zenodo.18867694) and [A Taxonomy of Epistemic Failure Modes in LLMs](https://doi.org/10.5281/zenodo.19042469) on Zenodo. 1,500+ controlled adversarial evaluations.
+- **Research papers.** [The Asymmetric Burden of Proof](https://doi.org/10.5281/zenodo.18867694), [A Taxonomy of Epistemic Failure Modes in LLMs](https://doi.org/10.5281/zenodo.19042469), [Precise Records, Unstable Meanings](https://doi.org/10.5281/zenodo.21652317), and [The Generative Horizon](https://doi.org/10.5281/zenodo.21659634) on Zenodo. The papers have distinct evidence roles and do not share one dataset or validate one another. The taxonomy is based on 1,461 controlled experiments.
 
 - **IP.** 5 US patent filings (1 non-provisional pending, 4 provisional).
 
