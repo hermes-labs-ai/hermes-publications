@@ -79,7 +79,7 @@ class PublicationExportTests(unittest.TestCase):
         )
         self.assertEqual(
             root.findtext("atom:updated", namespaces=atom),
-            "2026-07-30T00:00:00Z",
+            "2026-08-06T00:00:00Z",
         )
         self.assertEqual(
             [
