@@ -214,7 +214,12 @@ def render_atom(data: dict) -> str:
         ET.SubElement(entry, atom_tag("updated")).text = timestamp
 
     ET.indent(root, space="  ")
-    return ET.tostring(root, encoding="unicode", xml_declaration=True) + "\n"
+    # ET.tostring's auto-generated XML declaration casing for the encoding
+    # attribute ('UTF-8' vs 'utf-8') differs by Python version, which made
+    # this export flip depending on which interpreter last ran it. Build the
+    # declaration explicitly so the output is identical on every Python.
+    body = ET.tostring(root, encoding="unicode", xml_declaration=False)
+    return "<?xml version='1.0' encoding='utf-8'?>\n" + body + "\n"
 
 
 def rendered_outputs(data: dict) -> dict[str, str]:
