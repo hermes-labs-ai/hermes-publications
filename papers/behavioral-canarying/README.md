@@ -3,9 +3,9 @@
 **Powerless Model Probes with Explicit Coverage Semantics**
 
 Bosch, R. (2026). *Zenodo technical note.*
-DOI: [10.5281/zenodo.21818565](https://doi.org/10.5281/zenodo.21818565)
+DOI: [10.5281/zenodo.21818564](https://doi.org/10.5281/zenodo.21818564)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21818565.svg)](https://doi.org/10.5281/zenodo.21818565)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21818564.svg)](https://doi.org/10.5281/zenodo.21818564)
 
 Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
 
@@ -61,8 +61,8 @@ regression work but are not represented as a performance certificate.
                   Probes with Explicit Coverage Semantics},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21818565},
-  url          = {https://doi.org/10.5281/zenodo.21818565},
+  doi          = {10.5281/zenodo.21818564},
+  url          = {https://doi.org/10.5281/zenodo.21818564},
   note         = {Technical note}
 }
 ```

@@ -23,7 +23,7 @@
     { "identifier": "10.5281/zenodo.18867694", "relation": "references", "scheme": "doi" },
     { "identifier": "10.5281/zenodo.21652317", "relation": "references", "scheme": "doi" },
     { "identifier": "10.5281/zenodo.21659634", "relation": "references", "scheme": "doi" },
-    { "identifier": "10.5281/zenodo.21818565", "relation": "references", "scheme": "doi" },
-    { "identifier": "10.5281/zenodo.21817244", "relation": "references", "scheme": "doi" }
+    { "identifier": "10.5281/zenodo.21818564", "relation": "references", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.21817243", "relation": "references", "scheme": "doi" }
   ]
 }

@@ -3,9 +3,9 @@
 **Relational Static Analysis for AI Agent Tool Descriptions**
 
 Bosch, R. (2026). *Zenodo technical note.*
-DOI: [10.5281/zenodo.21817244](https://doi.org/10.5281/zenodo.21817244)
+DOI: [10.5281/zenodo.21817243](https://doi.org/10.5281/zenodo.21817243)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21817244.svg)](https://doi.org/10.5281/zenodo.21817244)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21817243.svg)](https://doi.org/10.5281/zenodo.21817243)
 
 Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
 
@@ -52,8 +52,8 @@ claim to validate H1.6's effect on actual model tool-selection behavior.
                   Tool Descriptions},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21817244},
-  url          = {https://doi.org/10.5281/zenodo.21817244},
+  doi          = {10.5281/zenodo.21817243},
+  url          = {https://doi.org/10.5281/zenodo.21817243},
   note         = {Technical note}
 }
 ```

@@ -7,9 +7,9 @@
   <updated>2026-08-06T00:00:00Z</updated>
   <entry>
     <title>Behavioral Canarying for Prompt Injection: Powerless Model Probes with Explicit Coverage Semantics</title>
-    <id>https://doi.org/10.5281/zenodo.21818565</id>
+    <id>https://doi.org/10.5281/zenodo.21818564</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/behavioral-canarying" />
-    <link rel="related" href="https://doi.org/10.5281/zenodo.21818565" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21818564" />
     <summary>Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release.</summary>
     <author>
       <name>Rolando Bosch</name>
@@ -20,9 +20,9 @@
   </entry>
   <entry>
     <title>Tool Differentia: Relational Static Analysis for AI Agent Tool Descriptions</title>
-    <id>https://doi.org/10.5281/zenodo.21817244</id>
+    <id>https://doi.org/10.5281/zenodo.21817243</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/tool-differentia" />
-    <link rel="related" href="https://doi.org/10.5281/zenodo.21817244" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21817243" />
     <summary>Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness.</summary>
     <author>
       <name>Rolando Bosch</name>

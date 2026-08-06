@@ -84,7 +84,7 @@ Paper-specific archival repository:
 
 ### 5. Behavioral Canarying for Prompt Injection
 **Powerless Model Probes with Explicit Coverage Semantics**
-Bosch, R. (2026). DOI: [10.5281/zenodo.21818565](https://doi.org/10.5281/zenodo.21818565)
+Bosch, R. (2026). DOI: [10.5281/zenodo.21818564](https://doi.org/10.5281/zenodo.21818564)
 
 A technical note describing behavioral canarying: deliberately exposing a
 powerless language model to untrusted input and treating its response as
@@ -100,7 +100,7 @@ Operationalizing tool repository:
 
 ### 6. Tool Differentia
 **Relational Static Analysis for AI Agent Tool Descriptions**
-Bosch, R. (2026). DOI: [10.5281/zenodo.21817244](https://doi.org/10.5281/zenodo.21817244)
+Bosch, R. (2026). DOI: [10.5281/zenodo.21817243](https://doi.org/10.5281/zenodo.21817243)
 
 A deterministic, pre-runtime static analysis (LintLang H1.6) that flags when
 two individually valid tool definitions jointly fail to provide distinguishing
