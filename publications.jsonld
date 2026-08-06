@@ -102,7 +102,7 @@
       "position": 5,
       "item": {
         "@type": "ScholarlyArticle",
-        "@id": "https://doi.org/10.5281/zenodo.21818565",
+        "@id": "https://doi.org/10.5281/zenodo.21818564",
         "name": "Behavioral Canarying for Prompt Injection: Powerless Model Probes with Explicit Coverage Semantics",
         "datePublished": "2026-08-06",
         "author": {
@@ -115,7 +115,7 @@
           "name": "Zenodo"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "url": "https://doi.org/10.5281/zenodo.21818565",
+        "url": "https://doi.org/10.5281/zenodo.21818564",
         "sameAs": "https://github.com/hermes-labs-ai/little-canary",
         "description": "Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release."
       }
@@ -125,7 +125,7 @@
       "position": 6,
       "item": {
         "@type": "ScholarlyArticle",
-        "@id": "https://doi.org/10.5281/zenodo.21817244",
+        "@id": "https://doi.org/10.5281/zenodo.21817243",
         "name": "Tool Differentia: Relational Static Analysis for AI Agent Tool Descriptions",
         "datePublished": "2026-08-06",
         "author": {
@@ -138,7 +138,7 @@
           "name": "Zenodo"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "url": "https://doi.org/10.5281/zenodo.21817244",
+        "url": "https://doi.org/10.5281/zenodo.21817243",
         "sameAs": "https://github.com/hermes-labs-ai/lintlang",
         "description": "Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness."
       }
