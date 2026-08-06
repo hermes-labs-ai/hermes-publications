@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the paper using the preferred citation below."
+title: "Hermes Labs publication metadata: Tool Differentia"
+type: dataset
+authors:
+  - family-names: "Bosch"
+    given-names: "Rolando"
+    orcid: "https://orcid.org/0009-0005-4896-1112"
+    affiliation: "Hermes Labs"
+date-released: 2026-08-06
+repository: "https://github.com/hermes-labs-ai/hermes-publications/tree/main/papers/tool-differentia"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Tool Differentia: Relational Static Analysis for AI Agent Tool Descriptions"
+  authors:
+    - family-names: "Bosch"
+      given-names: "Rolando"
+      orcid: "https://orcid.org/0009-0005-4896-1112"
+      affiliation: "Hermes Labs"
+  year: 2026
+  doi: "10.5281/zenodo.21817244"
+  url: "https://doi.org/10.5281/zenodo.21817244"

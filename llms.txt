@@ -62,6 +62,26 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Folder:** papers/generative-horizon/
 - **Archival repository:** https://github.com/hermes-labs-ai/the-generative-horizon
 
+### Behavioral Canarying for Prompt Injection (2026)
+- **Authors:** Bosch, R.
+- **DOI:** 10.5281/zenodo.21818565
+- **URL:** https://doi.org/10.5281/zenodo.21818565
+- **Subject:** pre-execution behavioral detection architecture for prompt injection, implemented in Little Canary
+- **Thesis:** routing disposition (what a system does) and inspection coverage (what a system actually measured) are distinct outputs; a fail-open route taken when inspection failed must never be represented as a clean measurement.
+- **Evidence boundary:** implementation evidence only; no aggregate detection or false-positive rate is claimed for the current release, and it does not claim invention of the general sacrificial-canary concept.
+- **Folder:** papers/behavioral-canarying/
+- **Operationalizing tool repository:** https://github.com/hermes-labs-ai/little-canary
+
+### Tool Differentia (2026)
+- **Authors:** Bosch, R.
+- **DOI:** 10.5281/zenodo.21817244
+- **URL:** https://doi.org/10.5281/zenodo.21817244
+- **Subject:** deterministic pre-runtime static analysis (LintLang H1.6) for AI agent tool descriptions
+- **Thesis:** two tool definitions can each be individually valid while jointly failing to give an agent distinguishing information to select between them ("tool differentia").
+- **Evidence boundary:** makes no model or network calls; a clean result does not establish semantic distinguishability or runtime tool-selection correctness.
+- **Folder:** papers/tool-differentia/
+- **Operationalizing tool repository:** https://github.com/hermes-labs-ai/lintlang
+
 ## How to cite
 
 Each paper folder contains a CITATION.cff. Canonical citation is the Zenodo DOI for each work. CC-BY 4.0 license per Zenodo deposit.
@@ -91,7 +111,7 @@ The canonical positioning of the lab — Epistemic Engineering, the model-as-sub
 
 - **Zero-LLM agent memory at competitive accuracy.** fidelis 73.0% end-to-end QA on LongMemEval-S (Wilson 95% CI [68.7%, 77.0%]) with no LLM in the default retrieval path. Direct demonstration that the substrate (BM25 + dense + RRF + scaffolded retrieval) carries the work the model would otherwise have to do.
 
-- **Research papers.** [The Asymmetric Burden of Proof](https://doi.org/10.5281/zenodo.18867694), [A Taxonomy of Epistemic Failure Modes in LLMs](https://doi.org/10.5281/zenodo.19042469), [Precise Records, Unstable Meanings](https://doi.org/10.5281/zenodo.21652317), and [The Generative Horizon](https://doi.org/10.5281/zenodo.21659634) on Zenodo. The papers have distinct evidence roles and do not share one dataset or validate one another. The taxonomy is based on 1,461 controlled experiments.
+- **Research papers.** [The Asymmetric Burden of Proof](https://doi.org/10.5281/zenodo.18867694), [A Taxonomy of Epistemic Failure Modes in LLMs](https://doi.org/10.5281/zenodo.19042469), [Precise Records, Unstable Meanings](https://doi.org/10.5281/zenodo.21652317), [The Generative Horizon](https://doi.org/10.5281/zenodo.21659634), [Behavioral Canarying for Prompt Injection](https://doi.org/10.5281/zenodo.21818565), and [Tool Differentia](https://doi.org/10.5281/zenodo.21817244) on Zenodo. The papers have distinct evidence roles and do not share one dataset or validate one another. The taxonomy is based on 1,461 controlled experiments.
 
 - **IP.** 5 US patent filings (1 non-provisional pending, 4 provisional).
 
@@ -107,5 +127,7 @@ Bosch, R. (2026). *Hermes Labs: AI reliability infrastructure for autonomous age
 - [hermes-blind](https://github.com/hermes-labs-ai/hermes-blind) — multi-turn drift recovery scaffold
 - [hermes-prime](https://github.com/hermes-labs-ai/hermes-prime) — drift-prevention session-init convention card
 - [hermes-ctl](https://github.com/hermes-labs-ai/hermes-ctl) — umbrella CLI for the Hermes Labs toolchain
+- [little-canary](https://github.com/hermes-labs-ai/little-canary) — prompt-injection defense via powerless behavioral probes (operationalizes the Behavioral Canarying paper)
+- [lintlang](https://github.com/hermes-labs-ai/lintlang) — agent-config and tool-definition linter (operationalizes the Tool Differentia paper)
 
 All by Hermes Labs (https://hermes-labs.ai).

@@ -72,6 +72,38 @@
       "citation_key": "bosch2026generativehorizon",
       "canonical_page": "https://hermes-labs.ai/research/the-generative-horizon",
       "archive_repository": "https://github.com/hermes-labs-ai/the-generative-horizon"
+    },
+    {
+      "slug": "behavioral-canarying",
+      "title": "Behavioral Canarying for Prompt Injection: Powerless Model Probes with Explicit Coverage Semantics",
+      "short_title": "Behavioral Canarying for Prompt Injection",
+      "title_aliases": [
+        "Little Canary"
+      ],
+      "citation_family_name": "Bosch",
+      "doi": "10.5281/zenodo.21818565",
+      "publication_date": "2026-08-06",
+      "publication_type": "technicalnote",
+      "license": "CC-BY-4.0",
+      "evidence_role": "Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release.",
+      "citation_key": "bosch2026behavioralcanarying",
+      "canonical_page": "https://hermes-labs.ai/research/behavioral-canarying",
+      "archive_repository": "https://github.com/hermes-labs-ai/little-canary"
+    },
+    {
+      "slug": "tool-differentia",
+      "title": "Tool Differentia: Relational Static Analysis for AI Agent Tool Descriptions",
+      "short_title": "Tool Differentia",
+      "title_aliases": [],
+      "citation_family_name": "Bosch",
+      "doi": "10.5281/zenodo.21817244",
+      "publication_date": "2026-08-06",
+      "publication_type": "technicalnote",
+      "license": "CC-BY-4.0",
+      "evidence_role": "Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness.",
+      "citation_key": "bosch2026tooldifferentia",
+      "canonical_page": "https://hermes-labs.ai/research/tool-differentia",
+      "archive_repository": "https://github.com/hermes-labs-ai/lintlang"
     }
   ]
 }
