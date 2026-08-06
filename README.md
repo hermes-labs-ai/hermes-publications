@@ -82,6 +82,36 @@ language models.
 Paper-specific archival repository:
 [hermes-labs-ai/the-generative-horizon](https://github.com/hermes-labs-ai/the-generative-horizon)
 
+### 5. Behavioral Canarying for Prompt Injection
+**Powerless Model Probes with Explicit Coverage Semantics**
+Bosch, R. (2026). DOI: [10.5281/zenodo.21818565](https://doi.org/10.5281/zenodo.21818565)
+
+A technical note describing behavioral canarying: deliberately exposing a
+powerless language model to untrusted input and treating its response as
+pre-execution evidence, with routing disposition kept explicitly separate
+from inspection coverage so a fail-open route can never be read as a clean
+measurement. Reports no aggregate detection or false-positive rate for the
+current release.
+
+[`papers/behavioral-canarying/`](papers/behavioral-canarying/)
+
+Operationalizing tool repository:
+[hermes-labs-ai/little-canary](https://github.com/hermes-labs-ai/little-canary)
+
+### 6. Tool Differentia
+**Relational Static Analysis for AI Agent Tool Descriptions**
+Bosch, R. (2026). DOI: [10.5281/zenodo.21817244](https://doi.org/10.5281/zenodo.21817244)
+
+A deterministic, pre-runtime static analysis (LintLang H1.6) that flags when
+two individually valid tool definitions jointly fail to provide distinguishing
+information for an agent to select between them. Makes no model or network
+calls; a clean result does not establish runtime selection correctness.
+
+[`papers/tool-differentia/`](papers/tool-differentia/)
+
+Operationalizing tool repository:
+[hermes-labs-ai/lintlang](https://github.com/hermes-labs-ai/lintlang)
+
 ---
 
 ## How to cite
@@ -91,7 +121,7 @@ Each paper folder contains a `CITATION.cff` and a citation block in its README. 
 ## Machine-readable reuse
 
 - [`publications.json`](publications.json) is the single structured identity
-  source for the four-paper program: title, DOI, date, evidence role, license,
+  source for the publication program: title, DOI, date, evidence role, license,
   citation key, folder slug, and archival repository.
 - [`publications.jsonld`](publications.jsonld) exposes the same identities as a
   Schema.org `ItemList` of `ScholarlyArticle` records for search and answer

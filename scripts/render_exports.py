@@ -40,6 +40,7 @@ REQUIRED_PAPER_FIELDS = {
 PUBLICATION_TYPE_LABELS = {
     "preprint": "Preprint",
     "workingpaper": "Working paper",
+    "technicalnote": "Technical note",
 }
 
 ET.register_namespace("", ATOM_NAMESPACE)

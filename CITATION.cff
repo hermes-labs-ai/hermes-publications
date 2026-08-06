@@ -51,3 +51,19 @@ references:
     year: 2026
     doi: "10.5281/zenodo.21659634"
     url: "https://doi.org/10.5281/zenodo.21659634"
+  - type: article
+    title: "Behavioral Canarying for Prompt Injection: Powerless Model Probes with Explicit Coverage Semantics"
+    authors:
+      - family-names: "Bosch"
+        given-names: "Rolando"
+    year: 2026
+    doi: "10.5281/zenodo.21818565"
+    url: "https://doi.org/10.5281/zenodo.21818565"
+  - type: article
+    title: "Tool Differentia: Relational Static Analysis for AI Agent Tool Descriptions"
+    authors:
+      - family-names: "Bosch"
+        given-names: "Rolando"
+    year: 2026
+    doi: "10.5281/zenodo.21817244"
+    url: "https://doi.org/10.5281/zenodo.21817244"

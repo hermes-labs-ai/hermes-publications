@@ -1,10 +1,36 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Hermes Labs Research Publications</title>
   <id>https://hermes-labs.ai/atom.xml</id>
   <link rel="self" href="https://hermes-labs.ai/atom.xml" />
   <link rel="alternate" href="https://hermes-labs.ai/research" />
-  <updated>2026-07-30T00:00:00Z</updated>
+  <updated>2026-08-06T00:00:00Z</updated>
+  <entry>
+    <title>Behavioral Canarying for Prompt Injection: Powerless Model Probes with Explicit Coverage Semantics</title>
+    <id>https://doi.org/10.5281/zenodo.21818565</id>
+    <link rel="alternate" href="https://hermes-labs.ai/research/behavioral-canarying" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21818565" />
+    <summary>Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release.</summary>
+    <author>
+      <name>Rolando Bosch</name>
+      <uri>https://orcid.org/0009-0005-4896-1112</uri>
+    </author>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>Tool Differentia: Relational Static Analysis for AI Agent Tool Descriptions</title>
+    <id>https://doi.org/10.5281/zenodo.21817244</id>
+    <link rel="alternate" href="https://hermes-labs.ai/research/tool-differentia" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21817244" />
+    <summary>Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness.</summary>
+    <author>
+      <name>Rolando Bosch</name>
+      <uri>https://orcid.org/0009-0005-4896-1112</uri>
+    </author>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+  </entry>
   <entry>
     <title>The Generative Horizon: Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report</title>
     <id>https://doi.org/10.5281/zenodo.21659634</id>

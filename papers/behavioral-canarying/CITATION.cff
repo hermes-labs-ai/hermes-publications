@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the paper using the preferred citation below."
+title: "Hermes Labs publication metadata: Behavioral Canarying for Prompt Injection"
+type: dataset
+authors:
+  - family-names: "Bosch"
+    given-names: "Rolando"
+    orcid: "https://orcid.org/0009-0005-4896-1112"
+    affiliation: "Hermes Labs"
+date-released: 2026-08-06
+repository: "https://github.com/hermes-labs-ai/hermes-publications/tree/main/papers/behavioral-canarying"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Behavioral Canarying for Prompt Injection: Powerless Model Probes with Explicit Coverage Semantics"
+  authors:
+    - family-names: "Bosch"
+      given-names: "Rolando"
+      orcid: "https://orcid.org/0009-0005-4896-1112"
+      affiliation: "Hermes Labs"
+  year: 2026
+  doi: "10.5281/zenodo.21818565"
+  url: "https://doi.org/10.5281/zenodo.21818565"
