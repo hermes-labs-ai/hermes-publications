@@ -3,9 +3,11 @@
 **LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark**
 
 Bosch, R. (2026). *Hermes Labs Working Paper.*
-DOI: [10.5281/zenodo.18867694](https://doi.org/10.5281/zenodo.18867694)
+DOI: [10.5281/zenodo.18867693](https://doi.org/10.5281/zenodo.18867693)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18867694.svg)](https://doi.org/10.5281/zenodo.18867694)
+Current version DOI: [10.5281/zenodo.18867694](https://doi.org/10.5281/zenodo.18867694)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18867693.svg)](https://doi.org/10.5281/zenodo.18867693)
 
 Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
 
@@ -39,8 +41,8 @@ This is also the empirical foundation for the **Epistemic Engineering** thesis: 
                   Asymmetry in a Matched-Vignette Benchmark},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.18867694},
-  url          = {https://doi.org/10.5281/zenodo.18867694}
+  doi          = {10.5281/zenodo.18867693},
+  url          = {https://doi.org/10.5281/zenodo.18867693}
 }
 ```
 

@@ -10,6 +10,7 @@
     <id>https://doi.org/10.5281/zenodo.21818564</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/behavioral-canarying" />
     <link rel="related" href="https://doi.org/10.5281/zenodo.21818564" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21820059" title="Current version DOI" />
     <summary>Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release.</summary>
     <author>
       <name>Rolando Bosch</name>
@@ -23,6 +24,7 @@
     <id>https://doi.org/10.5281/zenodo.21817243</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/tool-differentia" />
     <link rel="related" href="https://doi.org/10.5281/zenodo.21817243" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21820025" title="Current version DOI" />
     <summary>Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness.</summary>
     <author>
       <name>Rolando Bosch</name>
@@ -33,9 +35,10 @@
   </entry>
   <entry>
     <title>The Generative Horizon: Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report</title>
-    <id>https://doi.org/10.5281/zenodo.21659634</id>
+    <id>https://doi.org/10.5281/zenodo.21659633</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/the-generative-horizon" />
-    <link rel="related" href="https://doi.org/10.5281/zenodo.21659634" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21659633" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21659634" title="Current version DOI" />
     <summary>Conceptual framework for model self-report, provenance, and recursive interpretive conditioning.</summary>
     <author>
       <name>Rolando Bosch</name>
@@ -46,9 +49,10 @@
   </entry>
   <entry>
     <title>Precise Records, Unstable Meanings: Measurement Validity and Unsupported Claims Derived from AI Agent Telemetry</title>
-    <id>https://doi.org/10.5281/zenodo.21652317</id>
+    <id>https://doi.org/10.5281/zenodo.21652316</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/precise-records-unstable-meanings" />
-    <link rel="related" href="https://doi.org/10.5281/zenodo.21652317" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21652316" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.21652317" title="Current version DOI" />
     <summary>Empirical naturalistic audit of measurement validity in AI agent telemetry.</summary>
     <author>
       <name>Rolando Bosch</name>
@@ -59,9 +63,10 @@
   </entry>
   <entry>
     <title>A Taxonomy of Epistemic Failure Modes in Large Language Models</title>
-    <id>https://doi.org/10.5281/zenodo.19042469</id>
+    <id>https://doi.org/10.5281/zenodo.19042468</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/taxonomy-of-epistemic-failure-modes" />
-    <link rel="related" href="https://doi.org/10.5281/zenodo.19042469" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.19042468" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.19042469" title="Current version DOI" />
     <summary>Empirical taxonomy derived from 1,461 controlled experiments.</summary>
     <author>
       <name>Rolando Bosch</name>
@@ -72,9 +77,10 @@
   </entry>
   <entry>
     <title>The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark</title>
-    <id>https://doi.org/10.5281/zenodo.18867694</id>
+    <id>https://doi.org/10.5281/zenodo.18867693</id>
     <link rel="alternate" href="https://hermes-labs.ai/research/the-asymmetric-burden-of-proof" />
-    <link rel="related" href="https://doi.org/10.5281/zenodo.18867694" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.18867693" />
+    <link rel="related" href="https://doi.org/10.5281/zenodo.18867694" title="Current version DOI" />
     <summary>Empirical matched-vignette study of null-result asymmetry.</summary>
     <author>
       <name>Rolando Bosch</name>

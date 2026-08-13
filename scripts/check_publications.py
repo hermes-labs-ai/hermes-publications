@@ -20,6 +20,7 @@ class Paper:
     label: str
     label_aliases: tuple[str, ...]
     doi: str
+    version_doi: str
     family_name: str
 
 
@@ -41,6 +42,7 @@ def load_papers(root: Path) -> dict[str, Paper]:
             label=entry["short_title"],
             label_aliases=tuple(entry["title_aliases"]),
             doi=entry["doi"],
+            version_doi=entry["version_doi"],
             family_name=entry["citation_family_name"],
         )
     if not papers:
@@ -130,6 +132,10 @@ def check(root: Path = ROOT) -> list[str]:
         ):
             if paper.doi not in surface:
                 errors.append(f"{surface_name}: missing DOI {paper.doi}")
+            if surface_name.endswith("README.md") and paper.version_doi not in surface:
+                errors.append(
+                    f"{surface_name}: missing current version DOI {paper.version_doi}"
+                )
         if paper.title not in paper_cff:
             errors.append(f"{cff_path.relative_to(root)}: missing canonical title")
 
@@ -139,8 +145,15 @@ def check(root: Path = ROOT) -> list[str]:
                 errors.append(f"{surface_name}: missing publication section for {paper.label}")
                 continue
             if dois(section) != {paper.doi} or f"papers/{slug}/" not in section:
+                expected_section_dois = {paper.doi, paper.version_doi}
+                if dois(section) == expected_section_dois and f"papers/{slug}/" in section:
+                    continue
                 errors.append(
                     f"{surface_name}: {paper.label} section does not bind DOI {paper.doi} to {slug}"
+                )
+            elif paper.version_doi not in dois(section):
+                errors.append(
+                    f"{surface_name}: {paper.label} section does not expose current version DOI {paper.version_doi}"
                 )
 
         errors.extend(check_relative_links(root, readme_path, paper_readme))

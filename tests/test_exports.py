@@ -45,6 +45,20 @@ class PublicationExportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "duplicate doi"):
             load_manifest(path)
 
+    def test_version_doi_is_required_and_distinct_from_concept_doi(self) -> None:
+        path = self.root / "publications.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        data["papers"][0].pop("version_doi", None)
+        path.write_text(json.dumps(data), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "missing fields.*version_doi"):
+            load_manifest(path)
+
+        data = json.loads((Path(__file__).resolve().parents[1] / "publications.json").read_text(encoding="utf-8"))
+        data["papers"][0]["version_doi"] = data["papers"][0]["doi"]
+        path.write_text(json.dumps(data), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "concept DOI and version DOI must differ"):
+            load_manifest(path)
+
     def test_invalid_publication_date_fails(self) -> None:
         for invalid_date in ("2026-7-30", "2026-02-30"):
             with self.subTest(publication_date=invalid_date):
@@ -106,6 +120,7 @@ class PublicationExportTests(unittest.TestCase):
         )
         for entry, paper in zip(entries, expected_papers, strict=True):
             doi_url = f"https://doi.org/{paper['doi']}"
+            version_doi_url = f"https://doi.org/{paper['version_doi']}"
             timestamp = paper["publication_date"] + "T00:00:00Z"
             self.assertEqual(entry.findtext("atom:id", namespaces=atom), doi_url)
             self.assertEqual(
@@ -113,6 +128,11 @@ class PublicationExportTests(unittest.TestCase):
                 [
                     {"rel": "alternate", "href": paper["canonical_page"]},
                     {"rel": "related", "href": doi_url},
+                    {
+                        "rel": "related",
+                        "href": version_doi_url,
+                        "title": "Current version DOI",
+                    },
                 ],
             )
             self.assertEqual(
@@ -143,6 +163,23 @@ class PublicationExportTests(unittest.TestCase):
         self.assertEqual(
             jsonld["itemListElement"][0]["item"]["license"],
             "https://creativecommons.org/publicdomain/zero/1.0/",
+        )
+
+    def test_jsonld_uses_concept_doi_as_identity_and_exposes_version_doi(self) -> None:
+        data = load_manifest(self.root / "publications.json")
+        item = json.loads(rendered_outputs(data)["publications.jsonld"])["itemListElement"][0]["item"]
+        self.assertEqual(item["@id"], "https://doi.org/10.5281/zenodo.18867693")
+        self.assertEqual(item["url"], "https://doi.org/10.5281/zenodo.18867693")
+        self.assertEqual(
+            item["identifier"],
+            [
+                {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.5281/zenodo.18867693"},
+                {
+                    "@type": "PropertyValue",
+                    "propertyID": "version DOI",
+                    "value": "10.5281/zenodo.18867694",
+                },
+            ],
         )
 
     def test_bibtex_does_not_relabel_unknown_publication_type(self) -> None:

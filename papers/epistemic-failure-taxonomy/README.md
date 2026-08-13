@@ -1,9 +1,11 @@
 # A Taxonomy of Epistemic Failure Modes in Large Language Models
 
 Bosch, R. (2026). *Hermes Labs Working Paper.*
-DOI: [10.5281/zenodo.19042469](https://doi.org/10.5281/zenodo.19042469)
+DOI: [10.5281/zenodo.19042468](https://doi.org/10.5281/zenodo.19042468)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19042469.svg)](https://doi.org/10.5281/zenodo.19042469)
+Current version DOI: [10.5281/zenodo.19042469](https://doi.org/10.5281/zenodo.19042469)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19042468.svg)](https://doi.org/10.5281/zenodo.19042468)
 
 Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
 
@@ -47,8 +49,8 @@ The taxonomy is also the calibration corpus for hermes-rubric's failure-mode dim
   title        = {A Taxonomy of Epistemic Failure Modes in Large Language Models},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.19042469},
-  url          = {https://doi.org/10.5281/zenodo.19042469}
+  doi          = {10.5281/zenodo.19042468},
+  url          = {https://doi.org/10.5281/zenodo.19042468}
 }
 ```
 

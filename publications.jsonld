@@ -10,7 +10,7 @@
       "position": 1,
       "item": {
         "@type": "ScholarlyArticle",
-        "@id": "https://doi.org/10.5281/zenodo.18867694",
+        "@id": "https://doi.org/10.5281/zenodo.18867693",
         "name": "The Asymmetric Burden of Proof: LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark",
         "datePublished": "2026-03-04",
         "author": {
@@ -23,7 +23,19 @@
           "name": "Zenodo"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "url": "https://doi.org/10.5281/zenodo.18867694",
+        "url": "https://doi.org/10.5281/zenodo.18867693",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.18867693"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "version DOI",
+            "value": "10.5281/zenodo.18867694"
+          }
+        ],
         "sameAs": "https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof",
         "description": "Empirical matched-vignette study of null-result asymmetry."
       }
@@ -33,7 +45,7 @@
       "position": 2,
       "item": {
         "@type": "ScholarlyArticle",
-        "@id": "https://doi.org/10.5281/zenodo.19042469",
+        "@id": "https://doi.org/10.5281/zenodo.19042468",
         "name": "A Taxonomy of Epistemic Failure Modes in Large Language Models",
         "datePublished": "2026-03-15",
         "author": {
@@ -46,7 +58,19 @@
           "name": "Zenodo"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "url": "https://doi.org/10.5281/zenodo.19042469",
+        "url": "https://doi.org/10.5281/zenodo.19042468",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.19042468"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "version DOI",
+            "value": "10.5281/zenodo.19042469"
+          }
+        ],
         "sameAs": "https://github.com/hermes-labs-ai/taxonomy-of-epistemic-failure-modes",
         "description": "Empirical taxonomy derived from 1,461 controlled experiments."
       }
@@ -56,7 +80,7 @@
       "position": 3,
       "item": {
         "@type": "ScholarlyArticle",
-        "@id": "https://doi.org/10.5281/zenodo.21652317",
+        "@id": "https://doi.org/10.5281/zenodo.21652316",
         "name": "Precise Records, Unstable Meanings: Measurement Validity and Unsupported Claims Derived from AI Agent Telemetry",
         "datePublished": "2026-07-30",
         "author": {
@@ -69,7 +93,19 @@
           "name": "Zenodo"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "url": "https://doi.org/10.5281/zenodo.21652317",
+        "url": "https://doi.org/10.5281/zenodo.21652316",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.21652316"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "version DOI",
+            "value": "10.5281/zenodo.21652317"
+          }
+        ],
         "sameAs": "https://github.com/hermes-labs-ai/precise-records-unstable-meanings",
         "description": "Empirical naturalistic audit of measurement validity in AI agent telemetry."
       }
@@ -79,7 +115,7 @@
       "position": 4,
       "item": {
         "@type": "ScholarlyArticle",
-        "@id": "https://doi.org/10.5281/zenodo.21659634",
+        "@id": "https://doi.org/10.5281/zenodo.21659633",
         "name": "The Generative Horizon: Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report",
         "datePublished": "2026-07-30",
         "author": {
@@ -92,7 +128,19 @@
           "name": "Zenodo"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "url": "https://doi.org/10.5281/zenodo.21659634",
+        "url": "https://doi.org/10.5281/zenodo.21659633",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.21659633"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "version DOI",
+            "value": "10.5281/zenodo.21659634"
+          }
+        ],
         "sameAs": "https://github.com/hermes-labs-ai/the-generative-horizon",
         "description": "Conceptual framework for model self-report, provenance, and recursive interpretive conditioning."
       }
@@ -116,6 +164,18 @@
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "url": "https://doi.org/10.5281/zenodo.21818564",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.21818564"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "version DOI",
+            "value": "10.5281/zenodo.21820059"
+          }
+        ],
         "sameAs": "https://github.com/hermes-labs-ai/little-canary",
         "description": "Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release."
       }
@@ -139,6 +199,18 @@
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "url": "https://doi.org/10.5281/zenodo.21817243",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "DOI",
+            "value": "10.5281/zenodo.21817243"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "version DOI",
+            "value": "10.5281/zenodo.21820025"
+          }
+        ],
         "sameAs": "https://github.com/hermes-labs-ai/lintlang",
         "description": "Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness."
       }

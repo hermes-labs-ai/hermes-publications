@@ -3,9 +3,11 @@
 **Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report**
 
 Bosch, R. (2026). *Zenodo preprint.*
-DOI: [10.5281/zenodo.21659634](https://doi.org/10.5281/zenodo.21659634)
+DOI: [10.5281/zenodo.21659633](https://doi.org/10.5281/zenodo.21659633)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21659634.svg)](https://doi.org/10.5281/zenodo.21659634)
+Current version DOI: [10.5281/zenodo.21659634](https://doi.org/10.5281/zenodo.21659634)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21659633.svg)](https://doi.org/10.5281/zenodo.21659633)
 
 Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
 
@@ -68,8 +70,8 @@ not test or validate the framework.
                   Attractors, and the Limits of Model Self-Report},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21659634},
-  url          = {https://doi.org/10.5281/zenodo.21659634},
+  doi          = {10.5281/zenodo.21659633},
+  url          = {https://doi.org/10.5281/zenodo.21659633},
   note         = {Preprint}
 }
 ```

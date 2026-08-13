@@ -29,6 +29,13 @@ class PublicationIndexTests(unittest.TestCase):
         path.write_text(text, encoding="utf-8")
         self.assertTrue(any("does not bind DOI" in error for error in check(self.root)))
 
+    def test_missing_version_doi_from_publication_section_fails(self) -> None:
+        path = self.root / "llms.txt"
+        text = path.read_text(encoding="utf-8")
+        text = text.replace("10.5281/zenodo.18867694", "10.5281/zenodo.18867693", 1)
+        path.write_text(text, encoding="utf-8")
+        self.assertTrue(any("does not expose current version DOI" in error for error in check(self.root)))
+
     def test_swapped_citation_titles_fail(self) -> None:
         path = self.root / "CITATION.cff"
         text = path.read_text(encoding="utf-8")

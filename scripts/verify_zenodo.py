@@ -33,7 +33,8 @@ def compare(paper: dict, record: dict, author_orcid: str) -> list[str]:
     creators = metadata.get("creators", [])
     observed_orcids = {creator.get("orcid") for creator in creators}
     expected = {
-        "doi": paper["doi"],
+        "doi": paper["version_doi"],
+        "concept_doi": paper["doi"],
         "title": paper["title"],
         "publication_date": paper["publication_date"],
         "publication_type": paper["publication_type"],
@@ -42,6 +43,7 @@ def compare(paper: dict, record: dict, author_orcid: str) -> list[str]:
     }
     observed = {
         "doi": record.get("doi"),
+        "concept_doi": record.get("conceptdoi"),
         "title": metadata.get("title"),
         "publication_date": metadata.get("publication_date"),
         "publication_type": (metadata.get("resource_type") or {}).get("subtype"),
@@ -70,7 +72,7 @@ def main() -> int:
     author_orcid = data["author"]["orcid"].rsplit("/", 1)[-1]
     for paper in data["papers"]:
         try:
-            record = fetch_record(paper["doi"], args.timeout)
+            record = fetch_record(paper["version_doi"], args.timeout)
         except (OSError, UnicodeError, urllib.error.URLError, json.JSONDecodeError) as exc:
             errors.append(f"{paper['slug']}: Zenodo lookup failed: {exc}")
             continue

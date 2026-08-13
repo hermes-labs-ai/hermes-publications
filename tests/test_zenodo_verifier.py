@@ -15,7 +15,8 @@ class ZenodoVerifierTests(unittest.TestCase):
 
     def record(self) -> dict:
         return {
-            "doi": self.paper["doi"],
+            "doi": self.paper["version_doi"],
+            "conceptdoi": self.paper["doi"],
             "metadata": {
                 "title": self.paper["title"],
                 "publication_date": self.paper["publication_date"],
@@ -34,6 +35,11 @@ class ZenodoVerifierTests(unittest.TestCase):
         self.assertTrue(
             any("title expected" in error for error in compare(self.paper, record, self.orcid))
         )
+
+    def test_concept_doi_drift_fails(self) -> None:
+        record = self.record()
+        record["conceptdoi"] = "10.5281/zenodo.1"
+        self.assertTrue(any("concept_doi expected" in error for error in compare(self.paper, record, self.orcid)))
 
 
 if __name__ == "__main__":
