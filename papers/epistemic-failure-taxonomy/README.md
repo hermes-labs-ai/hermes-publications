@@ -38,7 +38,7 @@ The taxonomy is also the calibration corpus for hermes-rubric's failure-mode dim
 ## Tools that operationalize this taxonomy
 
 - [hermes-rubric](https://github.com/hermes-labs-ai/hermes-rubric) — evidence-first structured scoring. The rubric's failure-mode dimensions are calibrated against this taxonomy. The published κ = 0.629 cross-model on 96 paired runs is the reproducibility receipt.
-- [hermeneutic](https://github.com/hermes-labs-ai/hermeneutic) — AI overclaim gate. The regex defaults target several modes from this taxonomy, especially Performative Hedging, Silent Instruction Relaxation, and Controversy-Truth Conflation.
+- [LintLang](https://github.com/hermes-labs-ai/lintlang) — zero-LLM static analysis for agent configurations, tool descriptions, and system prompts. It was developed as an applied engineering offshoot of this taxonomy; its deterministic findings identify authored patterns before runtime and do not establish model behavior or safety.
 - [hermes-blind](https://github.com/hermes-labs-ai/hermes-blind) — multi-turn drift recovery scaffold. Bends Silent Instruction Relaxation back toward the original instruction frame.
 
 ## Citation
