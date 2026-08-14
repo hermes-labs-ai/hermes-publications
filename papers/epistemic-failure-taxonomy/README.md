@@ -33,13 +33,18 @@ The paper builds the taxonomy from 1,461 controlled experiments and names seven 
 
 This paper is the foundational survey for the **Epistemic Engineering** thesis: that LLM reliability is governed by the linguistic substrate the model operates on, not by model weights. Each of the seven modes is a substrate-level phenomenon — the failure tracks signals in the prompt, conversation, or evaluation frame, not the model's training distribution. That makes each mode addressable by engineering the substrate.
 
-The taxonomy is also the calibration corpus for hermes-rubric's failure-mode dimensions. The 24-failure-mode taxonomy used internally by hermes-rubric extends this 7-mode published taxonomy into operational sub-categories.
+## Repository metadata correction — 2026-08-14
 
-## Tools that operationalize this taxonomy
+This repository previously listed Hermes Rubric, Hermeneutic, and Hermes Blind
+as tools operationalizing this taxonomy. Those mappings have been removed
+because the current public evidence does not establish those direct
+relationships. This repository-level correction does not amend the published
+paper.
 
-- [hermes-rubric](https://github.com/hermes-labs-ai/hermes-rubric) — evidence-first structured scoring. The rubric's failure-mode dimensions are calibrated against this taxonomy. The published κ = 0.629 cross-model on 96 paired runs is the reproducibility receipt.
-- [hermeneutic](https://github.com/hermes-labs-ai/hermeneutic) — AI overclaim gate. The regex defaults target several modes from this taxonomy, especially Performative Hedging, Silent Instruction Relaxation, and Controversy-Truth Conflation.
-- [hermes-blind](https://github.com/hermes-labs-ai/hermes-blind) — multi-turn drift recovery scaffold. Bends Silent Instruction Relaxation back toward the original instruction frame.
+[LintLang](https://github.com/hermes-labs-ai/lintlang) was developed as an
+applied engineering offshoot of this taxonomy. Its deterministic static
+findings identify authored patterns before runtime; they do not establish model
+behavior or safety.
 
 ## Citation
 
