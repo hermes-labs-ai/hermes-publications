@@ -19,10 +19,10 @@
   "license": "CC-BY-4.0",
   "access_right": "open",
   "related_identifiers": [
-    { "identifier": "10.5281/zenodo.19042469", "relation": "references", "scheme": "doi" },
-    { "identifier": "10.5281/zenodo.18867694", "relation": "references", "scheme": "doi" },
-    { "identifier": "10.5281/zenodo.21652317", "relation": "references", "scheme": "doi" },
-    { "identifier": "10.5281/zenodo.21659634", "relation": "references", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.19042468", "relation": "references", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.18867693", "relation": "references", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.21652316", "relation": "references", "scheme": "doi" },
+    { "identifier": "10.5281/zenodo.21659633", "relation": "references", "scheme": "doi" },
     { "identifier": "10.5281/zenodo.21818564", "relation": "references", "scheme": "doi" },
     { "identifier": "10.5281/zenodo.21817243", "relation": "references", "scheme": "doi" }
   ]

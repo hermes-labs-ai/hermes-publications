@@ -3,9 +3,11 @@
 **Measurement Validity and Unsupported Claims Derived from AI Agent Telemetry**
 
 Bosch, R. (2026). *Zenodo preprint.*
-DOI: [10.5281/zenodo.21652317](https://doi.org/10.5281/zenodo.21652317)
+DOI: [10.5281/zenodo.21652316](https://doi.org/10.5281/zenodo.21652316)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21652317.svg)](https://doi.org/10.5281/zenodo.21652317)
+Current version DOI: [10.5281/zenodo.21652317](https://doi.org/10.5281/zenodo.21652317)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21652316.svg)](https://doi.org/10.5281/zenodo.21652316)
 
 Machine-readable metadata: [JSON](../../publications.json) · [JSON-LD](../../publications.jsonld) · [BibTeX](../../CITATION.bib)
 
@@ -66,8 +68,8 @@ questions; neither is presented as validating the other.
                   Unsupported Claims Derived from AI Agent Telemetry},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21652317},
-  url          = {https://doi.org/10.5281/zenodo.21652317},
+  doi          = {10.5281/zenodo.21652316},
+  url          = {https://doi.org/10.5281/zenodo.21652316},
   note         = {Preprint}
 }
 ```

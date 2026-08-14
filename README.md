@@ -28,7 +28,7 @@ We call the discipline **Epistemic Engineering**: engineering an autonomous agen
 
 ### 1. The Asymmetric Burden of Proof
 **LLMs Show a Null-Result Asymmetry in a Matched-Vignette Benchmark**
-Bosch, R. (2026). DOI: [10.5281/zenodo.18867694](https://doi.org/10.5281/zenodo.18867694)
+Bosch, R. (2026). DOI: [10.5281/zenodo.18867693](https://doi.org/10.5281/zenodo.18867693) · Current version DOI: [10.5281/zenodo.18867694](https://doi.org/10.5281/zenodo.18867694)
 
 Matched-pair experiments testing whether three frontier LLMs (GPT-4o, GPT-5.2 Thinking, Claude Haiku 4.5) apply symmetric evidential standards to positive and null scientific claims. Across all six model-format conditions, models allocated less conclusion-consistent probability mass to null claims than to matched positive claims (gaps of 19.6–56.7 percentage points; all bootstrap 95% CIs excluding zero). Directionally consistent in 23 of 24 pair-condition cells. The asymmetry persists even when categorical labels collapse, surfacing through probability allocation. Implications for evidence synthesis, safety assessment, and decision-support pipelines that rely on LLM-generated confidence scores.
 
@@ -38,7 +38,7 @@ Paper-specific archival repository:
 [hermes-labs-ai/the-asymmetric-burden-of-proof](https://github.com/hermes-labs-ai/the-asymmetric-burden-of-proof)
 
 ### 2. A Taxonomy of Epistemic Failure Modes in Large Language Models
-Bosch, R. (2026). DOI: [10.5281/zenodo.19042469](https://doi.org/10.5281/zenodo.19042469)
+Bosch, R. (2026). DOI: [10.5281/zenodo.19042468](https://doi.org/10.5281/zenodo.19042468) · Current version DOI: [10.5281/zenodo.19042469](https://doi.org/10.5281/zenodo.19042469)
 
 Bottom-up analysis of 1,461 controlled experiments identifies seven structural failure modes distinct from hallucination: (1) Null-Result Asymmetry, (2) Source-Status Credibility Bias, (3) Agency Dissolution, (4) Performative Hedging, (5) Constraint Evasion, (6) Silent Instruction Relaxation, and (7) Controversy-Truth Conflation. Each mode is defined mechanistically, illustrated with experimental evidence, and assessed for downstream consequences. A common pattern emerges: models track surface-level signals — prestige markers, hedging vocabulary, controversy language, banned word lists — rather than the semantic content those signals are supposed to index.
 
@@ -49,7 +49,7 @@ Paper-specific archival repository:
 
 ### 3. Precise Records, Unstable Meanings
 **Measurement Validity and Unsupported Claims Derived from AI Agent Telemetry**
-Bosch, R. (2026). DOI: [10.5281/zenodo.21652317](https://doi.org/10.5281/zenodo.21652317)
+Bosch, R. (2026). DOI: [10.5281/zenodo.21652316](https://doi.org/10.5281/zenodo.21652316) · Current version DOI: [10.5281/zenodo.21652317](https://doi.org/10.5281/zenodo.21652317)
 
 A naturalistic twelve-week audit asks what operational telemetry can actually
 support us in claiming about sessions, tasks, outcomes, behavior, and failure.
@@ -67,7 +67,7 @@ Paper-specific archival repository:
 
 ### 4. The Generative Horizon
 **Applied Hermeneutics, Linguistic Attractors, and the Limits of Model Self-Report**
-Bosch, R. (2026). DOI: [10.5281/zenodo.21659634](https://doi.org/10.5281/zenodo.21659634)
+Bosch, R. (2026). DOI: [10.5281/zenodo.21659633](https://doi.org/10.5281/zenodo.21659633) · Current version DOI: [10.5281/zenodo.21659634](https://doi.org/10.5281/zenodo.21659634)
 
 A conceptual paper on how a represented linguistic situation becomes operative
 in the same computation that produces a language model's next representation.
@@ -84,7 +84,7 @@ Paper-specific archival repository:
 
 ### 5. Behavioral Canarying for Prompt Injection
 **Powerless Model Probes with Explicit Coverage Semantics**
-Bosch, R. (2026). DOI: [10.5281/zenodo.21818564](https://doi.org/10.5281/zenodo.21818564)
+Bosch, R. (2026). DOI: [10.5281/zenodo.21818564](https://doi.org/10.5281/zenodo.21818564) · Current version DOI: [10.5281/zenodo.21820059](https://doi.org/10.5281/zenodo.21820059)
 
 A technical note describing behavioral canarying: deliberately exposing a
 powerless language model to untrusted input and treating its response as
@@ -100,7 +100,7 @@ Operationalizing tool repository:
 
 ### 6. Tool Differentia
 **Relational Static Analysis for AI Agent Tool Descriptions**
-Bosch, R. (2026). DOI: [10.5281/zenodo.21817243](https://doi.org/10.5281/zenodo.21817243)
+Bosch, R. (2026). DOI: [10.5281/zenodo.21817243](https://doi.org/10.5281/zenodo.21817243) · Current version DOI: [10.5281/zenodo.21820025](https://doi.org/10.5281/zenodo.21820025)
 
 A deterministic, pre-runtime static analysis (LintLang H1.6) that flags when
 two individually valid tool definitions jointly fail to provide distinguishing

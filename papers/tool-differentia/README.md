@@ -4,6 +4,7 @@
 
 Bosch, R. (2026). *Zenodo technical note.*
 DOI: [10.5281/zenodo.21817243](https://doi.org/10.5281/zenodo.21817243)
+Current version DOI: [10.5281/zenodo.21820025](https://doi.org/10.5281/zenodo.21820025)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21817243.svg)](https://doi.org/10.5281/zenodo.21817243)
 

@@ -29,6 +29,7 @@ REQUIRED_PAPER_FIELDS = {
     "title_aliases",
     "citation_family_name",
     "doi",
+    "version_doi",
     "publication_date",
     "publication_type",
     "license",
@@ -109,6 +110,12 @@ def load_manifest(path: Path = MANIFEST) -> dict:
             seen.add(value)
         if not paper["doi"].startswith("10.5281/zenodo."):
             raise ValueError(f"unsupported DOI authority: {paper['doi']}")
+        if not paper["version_doi"].startswith("10.5281/zenodo."):
+            raise ValueError(f"unsupported version DOI authority: {paper['version_doi']}")
+        if paper["doi"] == paper["version_doi"]:
+            raise ValueError(
+                f"paper {position} concept DOI and version DOI must differ"
+            )
         if not paper["canonical_page"].startswith(
             "https://hermes-labs.ai/research/"
         ):
@@ -148,6 +155,7 @@ def render_jsonld(data: dict) -> str:
     items = []
     for position, paper in enumerate(data["papers"], start=1):
         doi_url = f"https://doi.org/{paper['doi']}"
+        version_doi = paper["version_doi"]
         items.append(
             {
                 "@type": "ListItem",
@@ -165,6 +173,18 @@ def render_jsonld(data: dict) -> str:
                     "publisher": {"@type": "Organization", "name": "Zenodo"},
                     "license": license_reference(paper["license"]),
                     "url": doi_url,
+                    "identifier": [
+                        {
+                            "@type": "PropertyValue",
+                            "propertyID": "DOI",
+                            "value": paper["doi"],
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "propertyID": "version DOI",
+                            "value": version_doi,
+                        },
+                    ],
                     "sameAs": paper["archive_repository"],
                     "description": paper["evidence_role"],
                 },
@@ -196,6 +216,7 @@ def render_atom(data: dict) -> str:
     author = data["author"]
     for paper in papers:
         doi_url = f"https://doi.org/{paper['doi']}"
+        version_doi_url = f"https://doi.org/{paper['version_doi']}"
         timestamp = paper["publication_date"] + "T00:00:00Z"
         entry = ET.SubElement(root, atom_tag("entry"))
         ET.SubElement(entry, atom_tag("title")).text = paper["title"]
@@ -206,6 +227,15 @@ def render_atom(data: dict) -> str:
             {"rel": "alternate", "href": paper["canonical_page"]},
         )
         ET.SubElement(entry, atom_tag("link"), {"rel": "related", "href": doi_url})
+        ET.SubElement(
+            entry,
+            atom_tag("link"),
+            {
+                "rel": "related",
+                "href": version_doi_url,
+                "title": "Current version DOI",
+            },
+        )
         ET.SubElement(entry, atom_tag("summary")).text = paper["evidence_role"]
         entry_author = ET.SubElement(entry, atom_tag("author"))
         ET.SubElement(entry_author, atom_tag("name")).text = author["name"]
