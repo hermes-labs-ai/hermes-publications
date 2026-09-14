@@ -72,6 +72,12 @@ regression work but are not represented as a performance certificate.
 
 CC-BY 4.0 (per Zenodo deposit).
 
+## Archival repository
+
+The paper, supplementary evidence package, citation metadata, checksums, and
+provenance boundary are at
+<https://github.com/hermes-labs-ai/behavioral-canarying>.
+
 ## Tool that operationalizes this note
 
 [Little Canary](https://github.com/hermes-labs-ai/little-canary) is the

@@ -95,6 +95,9 @@ current release.
 
 [`papers/behavioral-canarying/`](papers/behavioral-canarying/)
 
+Paper-specific archival repository:
+[hermes-labs-ai/behavioral-canarying](https://github.com/hermes-labs-ai/behavioral-canarying)
+
 Operationalizing tool repository:
 [hermes-labs-ai/little-canary](https://github.com/hermes-labs-ai/little-canary)
 
@@ -108,6 +111,9 @@ information for an agent to select between them. Makes no model or network
 calls; a clean result does not establish runtime selection correctness.
 
 [`papers/tool-differentia/`](papers/tool-differentia/)
+
+Paper-specific archival repository:
+[hermes-labs-ai/tool-differentia](https://github.com/hermes-labs-ai/tool-differentia)
 
 Operationalizing tool repository:
 [hermes-labs-ai/lintlang](https://github.com/hermes-labs-ai/lintlang)
