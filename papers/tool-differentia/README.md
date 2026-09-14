@@ -63,6 +63,12 @@ claim to validate H1.6's effect on actual model tool-selection behavior.
 
 CC-BY 4.0 (per Zenodo deposit).
 
+## Archival repository
+
+The paper, supplementary evidence package, citation metadata, checksums, and
+provenance boundary are at
+<https://github.com/hermes-labs-ai/tool-differentia>.
+
 ## Tool that operationalizes this note
 
 [LintLang](https://github.com/hermes-labs-ai/lintlang) implements H1.6, the
