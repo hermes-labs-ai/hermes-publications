@@ -1,0 +1,12 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "hermes-publications",
+  "description": "DOI-anchored, machine-readable index of Hermes Labs research on AI reliability, applied epistemology, and hermeneutics. Aggregates per-paper metadata (title, DOI, license, evidence role, archive repository) in publications.json and generates BibTeX, JSON-LD, and Atom exports from it. Each paper itself is published and DOI-anchored on Zenodo; repository scaffolding here (scripts, metadata, READMEs) is MIT, while individual paper texts are CC-BY 4.0 per their own Zenodo deposits.",
+  "codeRepository": "https://github.com/hermes-labs-ai/hermes-publications",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": "Python",
+  "author": [{"@type": "Person", "givenName": "Rolando", "familyName": "Bosch Rodriguez", "identifier": "https://orcid.org/0009-0005-4896-1112"}],
+  "url": "https://hermes-labs.ai/research",
+  "keywords": ["AI reliability", "epistemic engineering", "research index", "DOI", "CodeMeta", "citation metadata"]
+}
