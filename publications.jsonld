@@ -176,7 +176,7 @@
             "value": "10.5281/zenodo.21820059"
           }
         ],
-        "sameAs": "https://github.com/hermes-labs-ai/little-canary",
+        "sameAs": "https://github.com/hermes-labs-ai/behavioral-canarying",
         "description": "Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release."
       }
     },
@@ -211,7 +211,7 @@
             "value": "10.5281/zenodo.21820025"
           }
         ],
-        "sameAs": "https://github.com/hermes-labs-ai/lintlang",
+        "sameAs": "https://github.com/hermes-labs-ai/tool-differentia",
         "description": "Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness."
       }
     }

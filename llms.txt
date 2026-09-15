@@ -75,6 +75,7 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Thesis:** routing disposition (what a system does) and inspection coverage (what a system actually measured) are distinct outputs; a fail-open route taken when inspection failed must never be represented as a clean measurement.
 - **Evidence boundary:** implementation evidence only; no aggregate detection or false-positive rate is claimed for the current release, and it does not claim invention of the general sacrificial-canary concept.
 - **Folder:** papers/behavioral-canarying/
+- **Archival repository:** https://github.com/hermes-labs-ai/behavioral-canarying
 - **Operationalizing tool repository:** https://github.com/hermes-labs-ai/little-canary
 
 ### Tool Differentia (2026)
@@ -86,6 +87,7 @@ A canonical, DOI-anchored index of Hermes Labs research. Each paper has a Zenodo
 - **Thesis:** two tool definitions can each be individually valid while jointly failing to give an agent distinguishing information to select between them ("tool differentia").
 - **Evidence boundary:** makes no model or network calls; a clean result does not establish semantic distinguishability or runtime tool-selection correctness.
 - **Folder:** papers/tool-differentia/
+- **Archival repository:** https://github.com/hermes-labs-ai/tool-differentia
 - **Operationalizing tool repository:** https://github.com/hermes-labs-ai/lintlang
 
 ## How to cite

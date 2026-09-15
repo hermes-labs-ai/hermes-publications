@@ -93,7 +93,7 @@
       "evidence_role": "Architecture note for an evidence-preserving prompt-injection detection interface; no aggregate accuracy claim for the current release.",
       "citation_key": "bosch2026behavioralcanarying",
       "canonical_page": "https://hermes-labs.ai/research/behavioral-canarying",
-      "archive_repository": "https://github.com/hermes-labs-ai/little-canary"
+      "archive_repository": "https://github.com/hermes-labs-ai/behavioral-canarying"
     },
     {
       "slug": "tool-differentia",
@@ -109,7 +109,7 @@
       "evidence_role": "Deterministic pre-runtime static-analysis technical note for LintLang H1.6; a clean result does not establish semantic distinguishability or runtime selection correctness.",
       "citation_key": "bosch2026tooldifferentia",
       "canonical_page": "https://hermes-labs.ai/research/tool-differentia",
-      "archive_repository": "https://github.com/hermes-labs-ai/lintlang"
+      "archive_repository": "https://github.com/hermes-labs-ai/tool-differentia"
     }
   ]
 }
