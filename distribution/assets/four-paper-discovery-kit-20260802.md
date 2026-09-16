@@ -141,4 +141,4 @@ not supersede a newer distribution snapshot or destination-specific evidence.
 
 - Canonical identities and paper summaries: `../../publications.json`
 - Current partial distribution state: `../20260802T1751-0400-partial/`
-- Operational distribution truth: `/Users/rbr_lpci/Documents/oth/distribution/`
+- Operational distribution truth: `<local-ops-workspace>/distribution/`

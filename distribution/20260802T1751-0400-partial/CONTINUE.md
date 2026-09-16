@@ -8,8 +8,8 @@ Use this protocol when extending Hermes Labs paper-distribution knowledge.
 2. Read [`../SNAPSHOT.md`](SNAPSHOT.md), [`STATUS.md`](STATUS.md), and
    [`EVIDENCE.md`](EVIDENCE.md).
 3. Read the current operational handoff under
-   `/Users/rbr_lpci/Documents/oth/distribution/` and check
-   `/Users/rbr_lpci/.config/hermes/supersession-pointers.json`.
+   `<local-ops-workspace>/distribution/` and check
+   `<local-config>/supersession-pointers.json`.
 4. Confirm that no newer receipt or public readback already answers the proposed
    question.
 5. Revalidate only the narrow open item being advanced. Do not restart the

@@ -13,12 +13,12 @@ goal_relation: EXTENDS
 
 ## Snapshot identity
 
-- Repository: `/Users/rbr_lpci/Documents/oth/repositories/hermes-publications`
+- Repository: `<local-ops-workspace>/repositories/hermes-publications`
 - Branch observed: `codex/public-research-hub-link-20260802`
 - Git SHA observed: `6e79f0b967d0e03f67bdb96ac3a5dc2bb9275ba6`
 - Canonical paper index: [`../../publications.json`](../../publications.json)
 - Operational distribution workspace:
-  `/Users/rbr_lpci/Documents/oth/distribution/`
+  `<local-ops-workspace>/distribution/`
 - Unrelated pre-existing dirty state preserved: untracked Python `__pycache__`
   directories under `scripts/` and `tests/`
 

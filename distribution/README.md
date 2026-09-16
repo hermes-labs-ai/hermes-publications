@@ -38,12 +38,12 @@ When sources disagree, use this order:
 2. Canonical publication identity in [`../publications.json`](../publications.json)
    and the corresponding Zenodo DOI record.
 3. Current operational receipts and handoffs under
-   `/Users/rbr_lpci/Documents/oth/distribution/`.
+   `<local-ops-workspace>/distribution/`.
 4. The newest timestamped snapshot in this folder.
 5. Older snapshots and inherited notes, which are leads rather than current
    truth until revalidated.
 
-Also check `/Users/rbr_lpci/.config/hermes/supersession-pointers.json` before
+Also check `<local-config>/supersession-pointers.json` before
 using a load-bearing Hermes claim.
 
 ## Boundaries
