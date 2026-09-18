@@ -134,7 +134,6 @@ Bosch, R. (2026). *Hermes Labs: AI reliability infrastructure for autonomous age
 - [hermeneutic](https://github.com/hermes-labs-ai/hermeneutic) — AI overclaim gate
 - [hermes-blind](https://github.com/hermes-labs-ai/hermes-blind) — multi-turn drift recovery scaffold
 - [hermes-prime](https://github.com/hermes-labs-ai/hermes-prime) — drift-prevention session-init convention card
-- [hermes-ctl](https://github.com/hermes-labs-ai/hermes-ctl) — umbrella CLI for the Hermes Labs toolchain
 - [little-canary](https://github.com/hermes-labs-ai/little-canary) — prompt-injection defense via powerless behavioral probes (operationalizes the Behavioral Canarying paper)
 - [lintlang](https://github.com/hermes-labs-ai/lintlang) — agent-config and tool-definition linter (operationalizes the Tool Differentia paper)
 
