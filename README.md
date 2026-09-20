@@ -124,6 +124,20 @@ Operationalizing tool repository:
 
 Each paper folder contains a `CITATION.cff` and a citation block in its README. The canonical home for each paper is the Zenodo DOI; this repository aggregates metadata, plain-language summaries, and pointers to the tools that operationalize the findings.
 
+## Feedback, replication, and corrections
+
+Falsifiable critiques, replications, counterexamples, and source-backed
+metadata corrections are welcome. Use the
+[research feedback form](https://github.com/hermes-labs-ai/hermes-publications/issues/new?template=research-feedback.yml)
+and include the paper DOI, the page or section at issue, the relevant model or
+artifact version, and the smallest reproducible observation. Product defects
+belong in the operationalizing tool repository linked from the paper entry;
+corrections to a paper's content belong in that paper's archival repository.
+
+The summaries in this index are bounded by the published papers. Feedback does
+not need to accept their framing, but it should identify the claim or evidence
+being challenged so the record can be checked.
+
 ## Machine-readable reuse
 
 - [`publications.json`](publications.json) is the single structured identity
