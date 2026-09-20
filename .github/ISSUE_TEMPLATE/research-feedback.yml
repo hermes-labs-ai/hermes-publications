@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for engaging with the research. Keep the report tied to a specific paper claim, section, or artifact. Product defects belong in the linked tool repository.
+        Thank you for engaging with the research. Keep the report tied to a specific paper claim, section, or artifact. If the paper entry links an operationalizing tool repository, report product defects there. Otherwise use this form and include the affected paper or artifact plus reproduction details.
 
   - type: dropdown
     id: paper

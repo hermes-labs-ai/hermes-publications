@@ -130,9 +130,11 @@ Falsifiable critiques, replications, counterexamples, and source-backed
 metadata corrections are welcome. Use the
 [research feedback form](https://github.com/hermes-labs-ai/hermes-publications/issues/new?template=research-feedback.yml)
 and include the paper DOI, the page or section at issue, the relevant model or
-artifact version, and the smallest reproducible observation. Product defects
-belong in the operationalizing tool repository linked from the paper entry;
-corrections to a paper's content belong in that paper's archival repository.
+artifact version, and the smallest reproducible observation. If the paper entry
+links an operationalizing tool repository, report product defects there.
+Otherwise use this form and include the affected paper or artifact plus
+reproduction details. Corrections to a paper's content belong in that paper's
+archival repository.
 
 The summaries in this index are bounded by the published papers. Feedback does
 not need to accept their framing, but it should identify the claim or evidence
