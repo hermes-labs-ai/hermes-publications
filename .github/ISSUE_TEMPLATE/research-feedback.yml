@@ -1,0 +1,79 @@
+name: Research feedback
+description: Report a replication, counterexample, critique, or source-backed correction for a Hermes Labs paper.
+title: "[Research feedback]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for engaging with the research. Keep the report tied to a specific paper claim, section, or artifact. If the paper entry links an operationalizing tool repository, report product defects there. Otherwise use this form and include the affected paper or artifact plus reproduction details.
+
+  - type: dropdown
+    id: paper
+    attributes:
+      label: Paper
+      options:
+        - The Asymmetric Burden of Proof
+        - A Taxonomy of Epistemic Failure Modes in Large Language Models
+        - Precise Records, Unstable Meanings
+        - The Generative Horizon
+        - Behavioral Canarying for Prompt Injection
+        - Tool Differentia
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback type
+      options:
+        - Replication or reanalysis
+        - Counterexample or boundary case
+        - Method or measurement critique
+        - Citation or metadata correction
+        - Artifact or provenance question
+        - Other research feedback
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Claim location
+      description: Give the DOI plus the page, section, figure, table, or repository path.
+      placeholder: "DOI 10.5281/zenodo.…, section 3.2, page 8"
+    validations:
+      required: true
+
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observation
+      description: State what you observed and how it bears on the cited claim. Separate evidence from interpretation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction details or source
+      description: Include model and artifact versions, prompts or inputs, environment, data, code, citations, and public links when available. Do not include secrets or private data.
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Known limitations
+      description: Note scope limits, missing controls, uncertainty, or conditions under which the observation may not generalize.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Conduct
+      options:
+        - label: I will keep the discussion evidence-focused and follow the repository Code of Conduct.
+          required: true
