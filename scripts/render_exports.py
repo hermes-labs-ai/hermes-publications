@@ -101,7 +101,6 @@ def load_manifest(path: Path = MANIFEST) -> dict:
             ) from exc
         for field, seen in (
             ("slug", seen_slugs),
-            ("doi", seen_dois),
             ("citation_key", seen_keys),
         ):
             value = paper[field]
@@ -116,6 +115,11 @@ def load_manifest(path: Path = MANIFEST) -> dict:
             raise ValueError(
                 f"paper {position} concept DOI and version DOI must differ"
             )
+        for field in ("doi", "version_doi"):
+            value = paper[field]
+            if value in seen_dois:
+                raise ValueError(f"duplicate {field}: {value}")
+            seen_dois.add(value)
         if not paper["canonical_page"].startswith(
             "https://hermes-labs.ai/research/"
         ):

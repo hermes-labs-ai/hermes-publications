@@ -7,6 +7,7 @@ import unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from scripts.check_publications import load_papers
 from scripts.render_exports import ATOM_NAMESPACE, check_outputs, load_manifest, rendered_outputs
 
 
@@ -44,6 +45,21 @@ class PublicationExportTests(unittest.TestCase):
         path.write_text(json.dumps(data), encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "duplicate doi"):
             load_manifest(path)
+
+    def test_doi_identity_collisions_across_fields_fail(self) -> None:
+        path = self.root / "publications.json"
+        original = path.read_text(encoding="utf-8")
+        for earlier, later in (("version_doi", "version_doi"),
+                               ("doi", "version_doi"),
+                               ("version_doi", "doi")):
+            with self.subTest(earlier=earlier, later=later):
+                data = json.loads(original)
+                data["papers"][1][later] = data["papers"][0][earlier]
+                path.write_text(json.dumps(data), encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, f"duplicate {later}"):
+                    load_manifest(path)
+                with self.assertRaisesRegex(ValueError, f"duplicate {later}"):
+                    load_papers(self.root)
 
     def test_version_doi_is_required_and_distinct_from_concept_doi(self) -> None:
         path = self.root / "publications.json"
