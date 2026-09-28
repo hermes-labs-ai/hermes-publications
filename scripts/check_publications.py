@@ -11,6 +11,12 @@ from pathlib import Path
 from urllib.parse import unquote
 
 
+if __package__:
+    from .render_exports import load_manifest
+else:
+    from render_exports import load_manifest
+
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -29,9 +35,7 @@ MARKDOWN_LINK_PATTERN = re.compile(r"\[[^]]*]\(([^)]+)\)")
 
 
 def load_papers(root: Path) -> dict[str, Paper]:
-    data = json.loads((root / "publications.json").read_text(encoding="utf-8"))
-    if data.get("schema") != "hermes.publications/v1":
-        raise ValueError("unsupported or missing publications schema")
+    data = load_manifest(root / "publications.json")
     papers: dict[str, Paper] = {}
     for entry in data.get("papers", []):
         slug = entry["slug"]
